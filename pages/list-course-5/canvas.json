@@ -234,7 +234,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "list-course-5_jsmain.initData",
               "name": "jsmain.initData",
               "collectionId": "list-course-5_jsmain",
               "clientSideExecution": true,
