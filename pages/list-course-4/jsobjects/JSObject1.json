@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "JSObject1",
-    "pageId": "list-course-1",
+    "pageId": "list-course-4",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -18,7 +18,7 @@
       }
     ]
   },
-  "id": "list-course-1_JSObject1",
+  "id": "list-course-4_JSObject1",
   "deleted": false,
   "gitSyncId": "633e5568cbe08b4e8c85c3d3_6343eab9a13b045bb53139ad"
 }
