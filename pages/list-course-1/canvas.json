@@ -224,7 +224,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "list-course_courses",
+              "id": "list-course-1_courses",
               "name": "courses",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -234,15 +234,13 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "list-course_jsmain.initData",
+              "id": "list-course-1_jsmain.initData",
               "name": "jsmain.initData",
-              "collectionId": "list-course_jsmain",
+              "collectionId": "list-course-1_jsmain",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    storeValue(\"token\", message);\n  });\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
@@ -260,5 +258,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "633e5568cbe08b4e8c85c3d3_633e5568cbe08b4e8c85c3d5"
+  "gitSyncId": "633e5568cbe08b4e8c85c3d3_6343eab9a13b045bb53139a1"
 }
