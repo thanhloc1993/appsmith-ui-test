@@ -224,7 +224,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "list-course-4_courses",
+              "id": "list-course-5_courses",
               "name": "courses",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -234,9 +234,9 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "list-course-4_jsmain.initData",
+              "id": "list-course-5_jsmain.initData",
               "name": "jsmain.initData",
-              "collectionId": "list-course-4_jsmain",
+              "collectionId": "list-course-5_jsmain",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
