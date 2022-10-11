@@ -87,6 +87,9 @@
                 },
                 {
                   "key": "totalRecordsCount"
+                },
+                {
+                  "key": "primaryColumns.course_id.displayText"
                 }
               ],
               "leftColumn": 0,
@@ -175,7 +178,8 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:3001/syllabus/courses/' + currentRow[\"course_id\"] + '/show?tab=CourseShow__settingTab'))}}",
-                  "validation": {}
+                  "validation": {},
+                  "displayText": "{{course.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course_id\"]))}}"
                 },
                 "name": {
                   "allowCellWrapping": false,
