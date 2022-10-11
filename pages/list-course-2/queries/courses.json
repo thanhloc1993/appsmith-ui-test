@@ -25,7 +25,11 @@
         },
         {
           "key": "authorization",
-          "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2NzQ3NWMwM2NjNjQwMjY0YjBhOTRkMTQ0N2YzYjU3OTBiMmFiZDQifQ.eyJpc3MiOiJtYW5hYmllIiwic3ViIjoiMDFGV04wWFpBV05UMUtXU0ZGVllKV1hGM1MiLCJhdWQiOiJtYW5hYmllLXN0YWciLCJleHAiOjE2NjUzOTAwMDksImlhdCI6MTY2NTM4NjQwNCwianRpIjoiMDFHRjBDN1BWNFhWQkRaNlZKV1NBWFRTVjYiLCJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJ4LWhhc3VyYS11c2VyLWlkIjoiMDFGV04wWFpBV05UMUtXU0ZGVllKV1hGM1MiLCJ4LWhhc3VyYS1zY2hvb2wtaWRzIjoiey0yMTQ3NDgzNjQ4fSIsIngtaGFzdXJhLXVzZXItZ3JvdXAiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiIsIngtaGFzdXJhLXJlc291cmNlLXBhdGgiOiItMjE0NzQ4MzY0OCJ9LCJtYW5hYmllIjp7ImFsbG93ZWRfcm9sZXMiOlsiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iXSwiZGVmYXVsdF9yb2xlIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJ1c2VyX2lkIjoiMDFGV04wWFpBV05UMUtXU0ZGVllKV1hGM1MiLCJzY2hvb2xfaWRzIjpbIi0yMTQ3NDgzNjQ4Il0sInVzZXJfZ3JvdXAiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiIsInJlc291cmNlX3BhdGgiOiItMjE0NzQ4MzY0OCJ9LCJyZXNvdXJjZV9wYXRoIjoiLTIxNDc0ODM2NDgiLCJ1c2VyX2dyb3VwIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4ifQ.YDOq79HsFy5MeZ-I9OBpjhtR2wYE7rGuEOXyKDSRH7P1KiSU2Q_TekryFs1Aa-8z12RY7CB7qdYNGo5mOym8_i4vQSOplYkJS8W3xbwIO2jd-TLUQr0X0wsN2vxe6hJjGzINvZ0vUxUfTFQq3bvch556sKiMfo_H1Qhnkn08Y5622KX1OHkCNdXvjqjebMQCHWF9W39b9F1yvJtaUiZRAvDNrY7a9ShUbGv34mFtl3JlSGvBp38Cfj5Y-yM4uracWScPhPPuUA9SwmpCNwAbOERqx11An0brFXxZSY1KNaurSHhGt5cisYkm9WV726FP9dxai1RwlHCJteNEv7sTBg"
+          "value": "Bearer {{appsmith.store.token}}"
+        },
+        {
+          "key": "X-Hasura-Admin-Secret",
+          "value": "{{!appsmith.store.token ? \"M@nabie123\" : \"\"}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -46,13 +50,21 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "headers[1].value"
+      },
+      {
+        "key": "headers[2].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(course.pageNo - 1) * course.pageSize"
+      "!appsmith.store.token ? \"M@nabie123\" : \"\"",
+      "(course.pageNo - 1) * course.pageSize",
+      "appsmith.store.token"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
