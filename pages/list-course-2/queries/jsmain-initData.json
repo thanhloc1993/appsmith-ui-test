@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}",
+      "body": "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    storeValue(\"token\", message);\n  });\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}"
+      "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    storeValue(\"token\", message);\n  });\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
