@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "jsmain",
+    "pageId": "list-location",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tinitData: async () => {\n\t\t//use async-await or promises\n\t\tpostMessageHandler(\n\t\t\t\"http://localhost:3001\", \n\t\t\t(message) => { \n\t\t\t\tstoreValue(\"token\", message);\n\t\t\t}\n\t\t)\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "list-location_jsmain",
+  "deleted": false,
+  "gitSyncId": "6343f5d7b205731297658049_6344d3a792998e470a7c1d7f"
+}

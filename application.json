@@ -3,6 +3,10 @@
     {
       "id": "list-course-2",
       "isDefault": true
+    },
+    {
+      "id": "list-location",
+      "isDefault": false
     }
   ],
   "viewMode": false,
