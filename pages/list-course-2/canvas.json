@@ -231,6 +231,7 @@
               "jsonPathKeys": [
                 "!appsmith.URL.queryParams[\"embed\"] ? \"M@nabie123\" : null",
                 "(course.pageNo - 1) * course.pageSize",
+                "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\"",
                 "appsmith.store.token"
               ],
               "timeoutInMillisecond": 10000
