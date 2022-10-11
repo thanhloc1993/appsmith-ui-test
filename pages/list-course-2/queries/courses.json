@@ -29,7 +29,7 @@
         },
         {
           "key": "X-Hasura-Admin-Secret",
-          "value": "{{!appsmith.store.token ? \"M@nabie123\" : \"\"}}"
+          "value": "{{!appsmith.URL.queryParams[\"embed\"] ? \"M@nabie123\" : \"\"}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -62,7 +62,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "!appsmith.store.token ? \"M@nabie123\" : \"\"",
+      "!appsmith.URL.queryParams[\"embed\"] ? \"M@nabie123\" : \"\"",
       "(course.pageNo - 1) * course.pageSize",
       "appsmith.store.token"
     ],

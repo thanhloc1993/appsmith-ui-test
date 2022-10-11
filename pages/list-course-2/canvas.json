@@ -229,9 +229,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "!appsmith.URL.queryParams[\"embed\"] ? \"M@nabie123\" : \"\"",
                 "(course.pageNo - 1) * course.pageSize",
-                "appsmith.store.token",
-                "!appsmith.store.token ? \"M@nabie123\" : \"\""
+                "appsmith.store.token"
               ],
               "timeoutInMillisecond": 10000
             },
