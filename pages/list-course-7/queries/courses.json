@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "list-course-2",
+    "pageId": "list-course-7",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -75,7 +75,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course-2_courses",
+  "id": "list-course-7_courses",
   "deleted": false,
   "gitSyncId": "633e5568cbe08b4e8c85c3d3_6340fd470fef9910a8bdd4ae"
 }

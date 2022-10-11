@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "list-course-2",
-    "slug": "list-course-2",
+    "name": "list-course-7",
+    "slug": "list-course-7",
     "layouts": [
       {
         "viewMode": false,
@@ -161,7 +161,7 @@
                   "alias": "course_id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "url",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -174,7 +174,7 @@
                   "label": "ID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course_id\"]))}}",
+                  "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:3001/syllabus/courses/' + currentRow[\"course_id\"] + '/show?tab=CourseShow__settingTab'))}}",
                   "validation": {}
                 },
                 "name": {
@@ -224,7 +224,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "list-course-2_courses",
+              "id": "list-course-7_courses",
               "name": "courses",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -237,9 +237,9 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "list-course-2_jsmain.initData",
+              "id": "list-course-7_jsmain.initData",
               "name": "jsmain.initData",
-              "collectionId": "list-course-2_jsmain",
+              "collectionId": "list-course-7_jsmain",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
@@ -252,7 +252,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "list-course-2",
+        "id": "list-course-7",
         "deleted": false,
         "policies": [],
         "userPermissions": []
