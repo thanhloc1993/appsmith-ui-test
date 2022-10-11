@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 760,
+          "bottomRow": 770,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -136,12 +136,12 @@
               "dynamicPropertyPathList": [],
               "compactMode": "TALL",
               "displayName": "Table",
-              "bottomRow": 68,
+              "bottomRow": 69,
               "columnWidthMap": {
                 "task": 245,
                 "step": 62,
                 "status": 75,
-                "course_id": 441
+                "course_id": 378
               },
               "parentRowSpace": 10,
               "hideCard": false,
