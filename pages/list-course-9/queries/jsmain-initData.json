@@ -16,8 +16,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "course-9",
-    "collectionId": "course-9_jsmain",
+    "pageId": "list-course-9",
+    "collectionId": "list-course-9_jsmain",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "course-9_jsmain.initData",
+  "id": "list-course-9_jsmain.initData",
   "deleted": false,
   "gitSyncId": "6346142056d4372176970424_6346142f56d437217697043b"
 }
