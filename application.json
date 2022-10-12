@@ -7,6 +7,10 @@
     {
       "id": "list-course-8",
       "isDefault": false
+    },
+    {
+      "id": "course-9",
+      "isDefault": false
     }
   ],
   "viewMode": false,
