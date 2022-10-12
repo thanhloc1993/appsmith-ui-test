@@ -1,16 +1,8 @@
 {
   "pages": [
     {
-      "id": "list-course-7",
+      "id": "list-course",
       "isDefault": true
-    },
-    {
-      "id": "list-course-8",
-      "isDefault": false
-    },
-    {
-      "id": "list-course-9",
-      "isDefault": false
     }
   ],
   "viewMode": false,
