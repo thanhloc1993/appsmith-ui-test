@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "list-course-7",
-    "slug": "list-course-7",
+    "name": "list-course",
+    "slug": "list-course",
     "layouts": [
       {
         "viewMode": false,
@@ -228,9 +228,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "list-course-7_jsmain.initData",
+              "id": "list-course_jsmain.initData",
               "name": "jsmain.initData",
-              "collectionId": "list-course-7_jsmain",
+              "collectionId": "list-course_jsmain",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
@@ -242,7 +242,7 @@
           ],
           [
             {
-              "id": "list-course-7_courses",
+              "id": "list-course_courses",
               "name": "courses",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -257,7 +257,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "list-course-7",
+        "id": "list-course",
         "deleted": false,
         "policies": [],
         "userPermissions": []
