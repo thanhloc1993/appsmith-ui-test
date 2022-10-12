@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "course-9",
-    "slug": "course-9",
+    "name": "list-course-9",
+    "slug": "list-course-9",
     "layouts": [
       {
         "viewMode": false,
@@ -228,7 +228,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "course-9_courses",
+              "id": "list-course-9_courses",
               "name": "courses",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -241,9 +241,9 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "course-9_jsmain.initData",
+              "id": "list-course-9_jsmain.initData",
               "name": "jsmain.initData",
-              "collectionId": "course-9_jsmain",
+              "collectionId": "list-course-9_jsmain",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
@@ -254,7 +254,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "course-9",
+        "id": "list-course-9",
         "deleted": false,
         "policies": [],
         "userPermissions": []
