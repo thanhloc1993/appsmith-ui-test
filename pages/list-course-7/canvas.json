@@ -174,7 +174,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "ID",
+                  "label": "Course ID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:3001/syllabus/courses/' + currentRow[\"course_id\"] + '/show?tab=CourseShow__settingTab'))}}",
@@ -228,18 +228,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "list-course-7_courses",
-              "name": "courses",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "(course.pageNo - 1) * course.pageSize",
-                "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]",
-                "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\""
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "list-course-7_jsmain.initData",
               "name": "jsmain.initData",
               "collectionId": "list-course-7_jsmain",
@@ -248,6 +236,20 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    storeValue(\"token\", message);\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "list-course-7_courses",
+              "name": "courses",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\"",
+                "(course.pageNo - 1) * course.pageSize",
+                "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
               ],
               "timeoutInMillisecond": 10000
             }
