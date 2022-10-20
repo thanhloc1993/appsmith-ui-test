@@ -228,20 +228,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "list-course_jsmain.initData",
-              "name": "jsmain.initData",
-              "collectionId": "list-course_jsmain",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  addMessageHandler()(message => {\n    storeValue(\"token\", message);\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "list-course_courses",
               "name": "courses",
               "confirmBeforeExecute": false,
