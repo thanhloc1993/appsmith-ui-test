@@ -248,7 +248,7 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "(course.pageNo - 1) * course.pageSize",
-                "appsmith.store.token ? appsmith.store.token :",
+                "appsmith.URL.queryParams[\"token\"]",
                 "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\""
               ],
               "timeoutInMillisecond": 10000
