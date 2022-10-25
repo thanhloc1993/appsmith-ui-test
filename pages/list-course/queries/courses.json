@@ -25,7 +25,7 @@
         },
         {
           "key": "authorization",
-          "value": "Bearer {{appsmith.URL.queryParams[\"token\"] }}"
+          "value": "Bearer {{appsmith.URL.queryParams[\"token\"]}}"
         }
       ],
       "encodeParamsToggle": true,
