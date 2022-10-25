@@ -235,7 +235,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  postMessageHandler(\"http://localhost:3001\", message => {\n    storeValue(\"token\", message);\n  });\n}"
+                "async () => {\n  addMessageHandler(message => {\n    storeValue(\"token\", message);\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

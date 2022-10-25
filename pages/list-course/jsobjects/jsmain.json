@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tinitData: async () => {\n\t\t//use async-await or promises\n\t\tpostMessageHandler(\n\t\t\t\"http://localhost:3001\", \n\t\t\t(message) => { \n\t\t\t\tstoreValue(\"token\", message);\n\t\t\t}\n\t\t)\n\t}\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tinitData: async () => {\n\t\t//use async-await or promises\n\t\taddMessageHandler(\n\t\t\t(message) => { \n\t\t\t\tstoreValue(\"token\", message);\n\t\t\t}\n\t\t)\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",
@@ -16,7 +16,8 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "list-course_jsmain",
   "deleted": false,
