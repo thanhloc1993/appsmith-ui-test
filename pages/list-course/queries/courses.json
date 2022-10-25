@@ -25,7 +25,7 @@
         },
         {
           "key": "authorization",
-          "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImE1OGFmM2EyZTBkMzdiMDk2NDViNjZmOTRmYWMzM2I5ODZkMmJjMDkifQ.eyJpc3MiOiJtYW5hYmllIiwic3ViIjoidGh1LnZvK2UyZXNjaG9vbEBtYW5hYmllLmNvbSIsImF1ZCI6Im1hbmFiaWUtbG9jYWwiLCJleHAiOjE2NjY2NjkxMjMsImlhdCI6MTY2NjY2NjMyNSwianRpIjoiMDFHRzZHVlNHOFdWSlNOQUpRNEZHSjVWMjEiLCJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJ4LWhhc3VyYS11c2VyLWlkIjoidGh1LnZvK2UyZXNjaG9vbEBtYW5hYmllLmNvbSIsIngtaGFzdXJhLXNjaG9vbC1pZHMiOiJ7LTIxNDc0ODM2NDR9IiwieC1oYXN1cmEtdXNlci1ncm91cCI6IlVTRVJfR1JPVVBfU0NIT09MX0FETUlOIiwieC1oYXN1cmEtcmVzb3VyY2UtcGF0aCI6Ii0yMTQ3NDgzNjQ0In0sIm1hbmFiaWUiOnsiYWxsb3dlZF9yb2xlcyI6WyJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiJdLCJkZWZhdWx0X3JvbGUiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiIsInVzZXJfaWQiOiJ0aHUudm8rZTJlc2Nob29sQG1hbmFiaWUuY29tIiwic2Nob29sX2lkcyI6WyItMjE0NzQ4MzY0NCJdLCJ1c2VyX2dyb3VwIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJyZXNvdXJjZV9wYXRoIjoiLTIxNDc0ODM2NDQifSwicmVzb3VyY2VfcGF0aCI6Ii0yMTQ3NDgzNjQ0IiwidXNlcl9ncm91cCI6IlVTRVJfR1JPVVBfU0NIT09MX0FETUlOIn0.XLXY08sCHrCGMt894tiKPVsw9o3Awuu6QIIcb0vy2wgPRJ9AUNifKuEwZsXEzxfvQMccscEAo1fCQvP7W01poVIvcG2xGSiRCq5pgHBe664M2eUq1b0vFL91GdRaPCNnbo7ptC48yrWC9I0a3g5Mmb5158HJ4Z8QrhPSogFZVyNCDQukO99nc26X3X6DT4Lb2CjooXmYKbIlLvvuTojC5I0GFlDB1pcrZGmURIOmhr6gnqlMhCUHFxDgvmAyfqSW1lBhfE3Qvol1rCay6CErOW3cG-R_5hNoscLGfgYHeE2SHH7Dv4kwubpEjuGFDSDOoqMTpdUNKvgcowUzZUtM9w"
+          "value": "Bearer {{appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -47,13 +47,17 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(course.pageNo - 1) * course.pageSize"
+      "(course.pageNo - 1) * course.pageSize",
+      "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
