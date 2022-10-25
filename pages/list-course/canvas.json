@@ -247,8 +247,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "(course.pageNo - 1) * course.pageSize",
-                "appsmith.URL.queryParams[\"token\"]"
+                "(course.pageNo - 1) * course.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
