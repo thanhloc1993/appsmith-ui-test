@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  addMessageHandler(message => {\n    storeValue(\"token\", message);\n  });\n}",
+      "body": "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  addMessageHandler(message => {\n    storeValue(\"token\", message);\n  });\n}"
+      "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

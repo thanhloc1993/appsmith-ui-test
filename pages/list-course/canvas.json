@@ -235,7 +235,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  addMessageHandler(message => {\n    storeValue(\"token\", message);\n  });\n}"
+                "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -247,9 +247,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\"",
                 "(course.pageNo - 1) * course.pageSize",
-                "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
+                "appsmith.store.token ? appsmith.store.token :",
+                "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\""
               ],
               "timeoutInMillisecond": 10000
             }

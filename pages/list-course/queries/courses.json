@@ -25,7 +25,7 @@
         },
         {
           "key": "authorization",
-          "value": "Bearer {{appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]}}"
+          "value": "Bearer {{appsmith.store.token ? appsmith.store.token : }}"
         },
         {
           "key": "{{!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\" }}",
@@ -53,10 +53,10 @@
         "key": "body"
       },
       {
-        "key": "headers[1].value"
+        "key": "headers[2].key"
       },
       {
-        "key": "headers[2].key"
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
@@ -65,7 +65,7 @@
     "jsonPathKeys": [
       "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\"",
       "(course.pageNo - 1) * course.pageSize",
-      "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
+      "appsmith.store.token ? appsmith.store.token :"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
