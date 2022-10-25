@@ -26,10 +26,6 @@
         {
           "key": "authorization",
           "value": "Bearer {{appsmith.URL.queryParams[\"token\"] }}"
-        },
-        {
-          "key": "{{!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\" }}",
-          "value": "M@nabie123"
         }
       ],
       "encodeParamsToggle": true,
@@ -53,9 +49,6 @@
         "key": "body"
       },
       {
-        "key": "headers[2].key"
-      },
-      {
         "key": "headers[1].value"
       }
     ],
@@ -63,7 +56,6 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "!appsmith.URL.queryParams[\"embed\"] ? \"X-Hasura-Admin-Secret\" : \"manabie\"",
       "(course.pageNo - 1) * course.pageSize",
       "appsmith.URL.queryParams[\"token\"]"
     ],
