@@ -200,7 +200,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Name1",
+                  "label": "Name23",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
