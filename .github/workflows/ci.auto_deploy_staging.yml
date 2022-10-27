@@ -1,4 +1,4 @@
-name: Deploy react app to GitHub Pages
+name: Deploy staging
 
 on:
   push:
@@ -15,5 +15,5 @@ jobs:
 
     - name: Build
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+          response = $(curl https://appsmith.local-green.manabie.io:31600/api/v1/git/pull/app/635a42eddc1d1b603e048648 -header "Accept= application/json" -header "branchName= master" -header "Authorization= Basic YXBwc21pdGhAbWFuYWJpZS5jb206dGhhbmhsb2M5Mw==")         
+          echo "response from curl= $response"  
