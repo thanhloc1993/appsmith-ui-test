@@ -26,6 +26,10 @@
         {
           "key": "authorization",
           "value": "Bearer {{appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]}}"
+        },
+        {
+          "key": "X-Hasura-Admin-Secret",
+          "value": "M@nabie123"
         }
       ],
       "encodeParamsToggle": true,
