@@ -15,7 +15,7 @@ jobs:
 
     - name: Build
       run: |
-          curl --location --request GET 'https://appsmith.local-green.manabie.io:31600/api/v1/git/pull/app/635a42eddc1d1b603e048648' \
+          curl --location --request GET 'https://b240-115-79-192-13.ap.ngrok.io/api/v1/git/pull/app/635a42eddc1d1b603e048648' \
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206dGhhbmhsb2M5Mw=='
