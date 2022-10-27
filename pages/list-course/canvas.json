@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 840,
+          "bottomRow": 1420,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -224,42 +224,41 @@
               "verticalAlignment": "CENTER"
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Video1",
-              "displayName": "Video",
-              "iconSVG": "/static/media/icon.39c2d6968b6bb91bbe019646a9243566.svg",
-              "searchTags": [
-                "youtube"
-              ],
-              "topRow": 44,
-              "bottomRow": 76,
+              "boxShadow": "none",
+              "widgetName": "Image1",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+              "topRow": 46,
+              "bottomRow": 134,
               "parentRowSpace": 10,
-              "type": "VIDEO_WIDGET",
+              "type": "IMAGE_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "leftColumn": 0,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 }
               ],
-              "key": "1idbtbzv9n",
-              "backgroundColor": "#000",
+              "defaultImage": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png",
+              "key": "3me7dy6jcc",
+              "image": "",
               "isDeprecated": false,
-              "rightColumn": 64,
-              "widgetId": "vdw6hs34p6",
+              "rightColumn": 60,
+              "objectFit": "contain",
+              "widgetId": "5rw2g22e0s",
               "isVisible": true,
               "version": 1,
-              "url": "https://assets.appsmith.com/widgets/bird.mp4",
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "autoPlay": false
+              "enableRotation": false
             }
           ]
         },
