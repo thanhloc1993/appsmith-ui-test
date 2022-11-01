@@ -476,6 +476,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "list-course_courses",
+              "name": "courses",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "(course.pageNo - 1) * course.pageSize",
+                "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "list-course_jsmain.initData",
               "name": "jsmain.initData",
               "collectionId": "list-course_jsmain",
@@ -484,19 +495,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "list-course_courses",
-              "name": "courses",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "(course.pageNo - 1) * course.pageSize",
-                "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
               ],
               "timeoutInMillisecond": 10000
             }
