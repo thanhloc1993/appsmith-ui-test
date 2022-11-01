@@ -214,7 +214,7 @@
                   "isCellVisible": true,
                   "isCellEditable": false,
                   "isDerived": false,
-                  "label": "status",
+                  "label": "status 999",
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                   "validation": {},
                   "labelColor": "#FFFFFF"
