@@ -16,7 +16,7 @@ jobs:
     - name: Build
       run: |
           echo loc
-          curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/635f52aab3ce396b06d52dbc' \
+          curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw=='
