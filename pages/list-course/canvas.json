@@ -80,9 +80,6 @@
                   "key": "totalRecordsCount"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.course_id.computedValue"
                 },
                 {
@@ -107,7 +104,7 @@
               "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
-              "isVisible": "{{appsmith.store.Architecture_CourseManagement_BackOffice_CourseType}}",
+              "isVisible": "{{appsmith.store.Architecture_CourseManagement_BackOffice_CourseType == true : true ? false}}",
               "enableClientSideSearch": true,
               "version": 1,
               "totalRecordsCount": "{{courses.data.data.courses_aggregate.aggregate.count}} ",
@@ -317,7 +314,7 @@
               "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "4px7wby4to",
-              "tableData": "{{ courses.data.data.courses }}",
+              "tableData": "",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
