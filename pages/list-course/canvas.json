@@ -295,7 +295,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -318,11 +318,11 @@
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
-              "serverSidePaginationEnabled": true,
+              "serverSidePaginationEnabled": false,
               "renderMode": "CANVAS",
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
-              "isVisiblePagination": true,
+              "isVisiblePagination": false,
               "cellBackground": "",
               "verticalAlignment": "CENTER"
             }
