@@ -77,19 +77,16 @@
                   "key": "childStylesheet.editActions.discardBorderRadius"
                 },
                 {
+                  "key": "totalRecordsCount"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
                   "key": "primaryColumns.course_id.computedValue"
                 },
                 {
                   "key": "primaryColumns.name.computedValue"
-                },
-                {
-                  "key": "totalRecordsCount"
-                },
-                {
-                  "key": "primaryColumns.course_id.displayText"
-                },
-                {
-                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.teaching_method.computedValue"
@@ -176,8 +173,10 @@
                   "alias": "course_id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "url",
+                  "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -189,9 +188,9 @@
                   "label": "Course ID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:3001/syllabus/courses/' + currentRow[\"course_id\"] + '/show?tab=CourseShow__settingTab'))}}",
+                  "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course_id\"]))}}",
                   "validation": {},
-                  "displayText": "{{course.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course_id\"]))}}"
+                  "cellBackground": ""
                 },
                 "name": {
                   "allowCellWrapping": false,
@@ -203,7 +202,9 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -212,11 +213,12 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Name Loc",
+                  "label": "name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{course.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
-                  "validation": {}
+                  "validation": {},
+                  "cellBackground": ""
                 },
                 "teaching_method": {
                   "allowCellWrapping": false,
@@ -317,6 +319,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "isVisiblePagination": true,
+              "cellBackground": "",
               "verticalAlignment": "CENTER"
             },
             {
@@ -426,6 +429,11 @@
               "widgetName": "Button1",
               "onClick": "{{JSObject1.submitFuc()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -460,7 +468,7 @@
               "rightColumn": 19,
               "isDefaultClickDisabled": true,
               "widgetId": "hmhriyqool",
-              "isVisible": true,
+              "isVisible": "true",
               "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
@@ -483,18 +491,6 @@
               "jsonPathKeys": [
                 "(course.pageNo - 1) * course.pageSize",
                 "appsmith.store.token ? appsmith.store.token : appsmith.URL.queryParams[\"token\"]"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "list-course_jsmain.initData",
-              "name": "jsmain.initData",
-              "collectionId": "list-course_jsmain",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -95,11 +95,27 @@
                 },
                 {
                   "key": "childStylesheet.editActions.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
                 }
               ],
               "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "isVisible": true,
@@ -140,9 +156,17 @@
                 "step",
                 "task",
                 "action",
-                "status"
+                "status",
+                "EditActions1"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                }
+              ],
               "displayName": "Table",
               "bottomRow": 28,
               "columnWidthMap": {
@@ -170,12 +194,13 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDerived": false,
                   "label": "step",
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
                   "validation": {},
-                  "labelColor": "#FFFFFF"
+                  "labelColor": "#FFFFFF",
+                  "isEditable": true
                 },
                 "task": {
                   "index": 1,
@@ -191,12 +216,13 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDerived": false,
                   "label": "task",
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
                   "validation": {},
-                  "labelColor": "#FFFFFF"
+                  "labelColor": "#FFFFFF",
+                  "isEditable": true
                 },
                 "status": {
                   "index": 2,
@@ -212,12 +238,13 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDerived": false,
                   "label": "status",
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                   "validation": {},
-                  "labelColor": "#FFFFFF"
+                  "labelColor": "#FFFFFF",
+                  "isEditable": true
                 },
                 "action": {
                   "index": 3,
@@ -244,6 +271,43 @@
                   "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
                   "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                },
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+                  "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}"
                 }
               },
               "key": "1rdblbhep7",
@@ -251,7 +315,7 @@
               "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "sgn1bws91j",
-              "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"status\": \"✅\",\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\",\n    \"status\": \"--\",\n  }\n]",
+              "tableData": "\n[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"status\": \"✅\",\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\",\n    \"status\": \"--\",\n  }\n]",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -263,7 +327,22 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_JSObject1.myFun2",
+              "name": "JSObject1.myFun2",
+              "collectionId": "Page1_JSObject1",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  let res = await Api1.run();\n  appsmith.store.aa = res;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page1",

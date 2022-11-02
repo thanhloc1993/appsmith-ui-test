@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "initData",
-    "fullyQualifiedName": "jsmain.initData",
+    "name": "myFun1",
+    "fullyQualifiedName": "JSObject1.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "list-course",
-    "collectionId": "list-course_jsmain",
+    "pageId": "Page1",
+    "collectionId": "Page1_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}",
+      "body": "() => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  addMessageHandler(message => {\n    console.log(message);\n    storeValue(\"token\", message);\n  });\n}"
+      "() => {}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course_jsmain.initData",
+  "id": "Page1_JSObject1.myFun1",
   "deleted": false,
-  "gitSyncId": "633e5568cbe08b4e8c85c3d3_633e5701d8f7c225a30ed831"
+  "gitSyncId": "6360798db3ce396b06d52e39_636092e7b3ce396b06d52e91"
 }
