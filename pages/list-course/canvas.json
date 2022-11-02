@@ -96,6 +96,9 @@
                 },
                 {
                   "key": "primaryColumns.course_types.computedValue"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "leftColumn": 0,
@@ -104,7 +107,7 @@
               "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.Architecture_CourseManagement_BackOffice_CourseType}}",
               "enableClientSideSearch": true,
               "version": 1,
               "totalRecordsCount": "{{courses.data.data.courses_aggregate.aggregate.count}} ",
@@ -145,7 +148,11 @@
                 "icon",
                 "course_types"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "compactMode": "TALL",
               "displayName": "Table",
               "bottomRow": 42,
