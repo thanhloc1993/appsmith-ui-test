@@ -107,7 +107,7 @@
               "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
-              "isVisible": "{{appsmith.store.Architecture_CourseManagement_BackOffice_CourseType == \"true\"}}",
+              "isVisible": "{{appsmith.store.Architecture_CourseManagement_BackOffice_CourseType}}",
               "enableClientSideSearch": true,
               "version": 1,
               "totalRecordsCount": "{{courses.data.data.courses_aggregate.aggregate.count}} ",
