@@ -34,7 +34,7 @@
               "isSortable": false,
               "onPageChange": "{{courses.run()}}",
               "type": "TABLE_WIDGET_V2",
-              "inlineEditingSaveOption": "ROW_LEVEL",
+              "inlineEditingSaveOption": "CUSTOM",
               "animateLoading": true,
               "dynamicBindingPathList": [
                 {
@@ -295,11 +295,11 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
-                  "isCellVisible": true,
+                  "isCellVisible": false,
                   "isDerived": false,
                   "label": "course_types",
                   "isSaveVisible": true,
