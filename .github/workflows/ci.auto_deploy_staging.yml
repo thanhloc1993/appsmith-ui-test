@@ -28,4 +28,4 @@ jobs:
     - name: Print
       id: print
       run: |
-          echo '${{ steps.workspace.outputs.var }}' | jq '{responseMeta: .responseMeta}'
+          echo '$(cat pull.json)' | jq '{responseMeta: .responseMeta}'
