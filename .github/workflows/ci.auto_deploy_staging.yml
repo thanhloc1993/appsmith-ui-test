@@ -15,9 +15,7 @@ jobs:
 
     - name: Build
       run: |
-          response =$(`curl --write-out '%{json}' \
-              --silent \
-              --output /dev/null \
+          response =$(`curl 
               --request GET \
               --header 'Accept: application/json, text/plain, */*' \
               --header 'branchName: master' \
