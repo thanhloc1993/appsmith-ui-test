@@ -15,12 +15,12 @@ jobs:
 
     - name: Build
       run: |
-          CODE=`curl --write-out '%{json}' \
+          response =$(`curl --write-out '%{json}' \
               --silent \
               --output /dev/null \
               --request GET \
               --header 'Accept: application/json, text/plain, */*' \
               --header 'branchName: master' \
               --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' \
-              --url 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39'` 
-          echo $CODE
+              --url 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39'`)
+          echo "response from curl= $response"  
