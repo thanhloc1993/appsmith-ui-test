@@ -28,9 +28,9 @@ jobs:
     - name: Check Response
       id: check-response
       run: |
-          status=$(echo $(cat pull.json) | jq '.responseMeta.status')
-          echo "${status}"
-          if [[ ${{ status }} == "200"]]; then
+          v=$(echo $(cat pull.json) | jq '.responseMeta.status')
+          echo "${v}"
+          if [[ ${{ v }} == "200"]]; then
             echo "ok"
           else
             echo "fail"
