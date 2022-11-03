@@ -23,3 +23,6 @@ jobs:
     - name: Read response
       id: workspace 
       run: echo $(cat pull.json)
+
+    - name: Check Response
+      run: echo "::set-output name=id::$(cat pull.json | jq -c '.pull[] | select(.name == "responseMeta").status')"
