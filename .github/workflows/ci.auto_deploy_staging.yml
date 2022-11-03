@@ -15,8 +15,9 @@ jobs:
 
     - name: Build
       run: |
-          RES=$(curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
+          curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
-          --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==')
-          echo "RES=$RES" >> $GITHUB_ENV
+          --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' > at.json
+          echo "STATUS= $(jq '.status' at.json)" >> $GITHUB_ENV
+          echo "${{ env.AUTH_TOKEN }}"
