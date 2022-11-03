@@ -14,17 +14,18 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Pull Metadata
+      id: pull-metadata
       run: |
           curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' -o pull.json
-
+    
     - name: Read response
       id: workspace 
-      run: |
-          $json = Get-Content yourfile.json | ConvertFrom-Json
-          echo "::set-output name=prop::$(echo $pull.json)"
+      run: echo $(cat pull.json)
 
-    - name: Check Response
-      run: echo ${{ steps.workspace.outputs.responseMeta}}
+    - name: Print
+      id: print
+      run: |
+          echo '${{ steps.pull-metadata.outputs.var }}' | jq '{responseMeta: .responseMeta}'
