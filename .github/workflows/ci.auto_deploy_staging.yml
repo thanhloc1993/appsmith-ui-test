@@ -24,3 +24,5 @@ jobs:
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: staging' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw=='
+
+          exit 1
