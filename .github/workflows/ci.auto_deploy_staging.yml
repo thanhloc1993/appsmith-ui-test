@@ -22,7 +22,10 @@ jobs:
     
     - name: Read response
       id: workspace 
-      run: echo $(cat pull.json)
+      run: |
+          echo 'RESPONSE_JSON<<EOF' >> $GITHUB_ENV
+          cat pull.json >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
 
     - name: Check Response
-      run: echo ${{pull.json(responseMeta).status}}
+      run: echo '${{ fromJson(env.RESPONSE_JSON).responseMeta }}'
