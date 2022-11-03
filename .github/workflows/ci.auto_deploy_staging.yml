@@ -21,12 +21,12 @@ jobs:
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' -o pull.json
     
-    - name: Read response
-      id: read-response 
+    - name: Read Response
+      id: read-reponse 
       run: echo $(cat pull.json)
 
     - name: Check Response
       id: check-response
       run: |
-          STATUS=$($(cat pull.json) | jq '.responseMeta.status')
-          echo STATUS
+          status= $(cat pull.json) | jq '.responseMeta.status'
+          echo status
