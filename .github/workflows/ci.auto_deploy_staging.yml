@@ -29,10 +29,8 @@ jobs:
       id: check-response
       run: |
           v=$(echo $(cat pull.json) | jq '.responseMeta.status')
-          echo "${v}"
-          echo ${v} == 200
           if [[ "$v" == "200" ]]; then
-            echo "ok"
+            echo echo $(cat pull.json) | jq '.data.mergeStatus.status'
           else
             echo "fail"
           fi
