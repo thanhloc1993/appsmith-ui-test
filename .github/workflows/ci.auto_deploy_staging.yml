@@ -20,4 +20,4 @@ jobs:
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' > at.json
           echo "STATUS= $(jq '.status' at.json)" >> $GITHUB_ENV
-          echo "${{ env.AUTH_TOKEN }}"
+          echo "${{ env.STATUS }}"
