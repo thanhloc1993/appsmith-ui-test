@@ -30,7 +30,7 @@ jobs:
       run: |
           v=$(echo $(cat pull.json) | jq '.responseMeta.status')
           if [[ "$v" == "200" ]]; then
-            echo echo $(cat pull.json) | jq '.data.mergeStatus.status'
+            echo $(cat pull.json) | jq '.data.mergeStatus.status'
           else
             echo "fail"
           fi
