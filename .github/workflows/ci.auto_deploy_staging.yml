@@ -19,12 +19,12 @@ jobs:
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' -o pull.json
-    
+          
     - name: Read response
       id: workspace 
       run: |
           echo 'RESPONSE_JSON<<EOF' >> $GITHUB_ENV
-          cat pull.json >> $GITHUB_ENV
+          $(cat pull.json) >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
 
     - name: Check Response
