@@ -15,21 +15,12 @@ jobs:
 
     - name: Build
       run: |
-          HTTP_RESPONSE=$(curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
+          curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
-          --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==')
-          # extract the body
-          HTTP_BODY=$(echo $HTTP_RESPONSE | sed -e 's/HTTPSTATUS\:.*//g')
+          --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw=='
 
-          # extract the status
-          HTTP_STATUS=$(echo $HTTP_RESPONSE | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-
-          # print the body
-          echo "$HTTP_BODY"
-
-          # example using the status
-          if [ ! $HTTP_STATUS -eq 200  ]; then
-            echo "Error [HTTP status: $HTTP_STATUS]"
-            exit 1
-          fi
+          curl --location --request GET 'https://appsmith.staging-green.manabie.io/api/v1/git/pull/app/6360798db3ce396b06d52e39' \
+          --header 'Accept: application/json, text/plain, */*' \
+          --header 'branchName: staging' \
+          --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw=='
