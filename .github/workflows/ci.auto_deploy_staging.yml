@@ -22,10 +22,11 @@ jobs:
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' -o pull.json
     
     - name: Read response
-      id: workspace 
+      id: read-response 
       run: echo $(cat pull.json)
 
-    - name: Print
-      id: print
+    - name: Check Response
+      id: check-response
       run: |
-          echo $(cat pull.json) | jq '.responseMeta.status'
+          STATUS=$($(cat pull.json) | jq '.responseMeta.status')
+          echo STATUS
