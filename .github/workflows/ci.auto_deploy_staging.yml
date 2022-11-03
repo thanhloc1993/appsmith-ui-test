@@ -28,5 +28,5 @@ jobs:
     - name: Check Response
       id: check-response
       run: |
-          echo STATUS_RESPONSE= $(cat pull.json) | jq '.responseMeta.status'
-          echo status
+          v=$(echo $(cat pull.json) | jq '.responseMeta.status')
+          echo "${v}"
