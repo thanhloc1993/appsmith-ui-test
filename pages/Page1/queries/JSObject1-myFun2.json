@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let res = await Api1.run();\n  appsmith.store.aa = res;\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let res = await Api1.run();\n  appsmith.store.aa = res;\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
