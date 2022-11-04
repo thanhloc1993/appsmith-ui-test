@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 760,
+          "bottomRow": 770,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -532,6 +532,55 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "fontSize": "1rem"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "TreeSelect1",
+              "displayName": "TreeSelect",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "Label",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 65,
+              "bottomRow": 69,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SINGLE_SELECT_TREE_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "BLUE",
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 9,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": "[\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\",\n        \"children\": [\n            {\n              \"label\": \"Dark Blue 1\",\n              \"value\": \"DARK BLUE 1\",\n              \"children\": [\n                {\n                  \"label\": \"Dark Blue 2\",\n                  \"value\": \"DARK BLUE 2\",\n                  \"children\": [\n                    {\n                      \"label\": \"Dark Blue 3\",\n                      \"value\": \"DARK BLUE 3\"\n                    },\n                    {\n                      \"label\": \"Light Blue 4\",\n                      \"value\": \"LIGHT BLUE 4\"\n                    }\n                  ]\n                },\n                {\n                  \"label\": \"Light Blue 6\",\n                  \"value\": \"LIGHT BLUE 6\"\n                }\n              ]\n            },\n            {\n              \"label\": \"Light Blue 1\",\n              \"value\": \"LIGHT BLUE 1\"\n            }\n          ]\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "skzefhsqp9",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "414d8evq6x",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "expandAll": false,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "allowClear": false
             }
           ]
         },
