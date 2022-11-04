@@ -574,7 +574,7 @@
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
-              "expandAll": false,
+              "expandAll": true,
               "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
