@@ -7,7 +7,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, custom-runner, small-runner]
 
     steps:
     - name: Checkout
@@ -20,10 +20,6 @@ jobs:
           --header 'Accept: application/json, text/plain, */*' \
           --header 'branchName: master' \
           --header 'Authorization: Basic YXBwc21pdGhAbWFuYWJpZS5jb206TUBuYWJpZTEyMw==' -o pull.json
-    
-    - name: Read Response
-      id: read-reponse 
-      run: echo $(cat pull.json)
 
     - name: Check Response
       id: check-response
