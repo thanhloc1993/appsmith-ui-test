@@ -26,121 +26,56 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Chart1",
-              "allowScroll": false,
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button1",
+              "onClick": "{{navigateTo('Page2',{key: 4, key2: 5}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [],
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
-                "graph",
-                "visuals",
-                "visualisations"
+                "click",
+                "submit"
               ],
-              "topRow": 19,
-              "bottomRow": 51,
+              "topRow": 24,
+              "bottomRow": 28,
               "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
+              "type": "BUTTON_WIDGET",
               "hideCard": false,
-              "chartData": {
-                "a0hn0watzl": {
-                  "seriesName": "Sales",
-                  "data": [
-                    {
-                      "x": "Product1",
-                      "y": 20000
-                    },
-                    {
-                      "x": "Product2",
-                      "y": 22000
-                    },
-                    {
-                      "x": "Product3",
-                      "y": 32000
-                    }
-                  ]
-                }
-              },
               "animateLoading": true,
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 20.0625,
-              "leftColumn": 25,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 20,
               "dynamicBindingPathList": [
                 {
+                  "key": "buttonColor"
+                },
+                {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "fontFamily"
                 }
               ],
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ],
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion",
-                    "alignCaptionWithCanvas": 1,
-                    "captionFontSize": "24",
-                    "captionAlignment": "center",
-                    "captionPadding": "20",
-                    "captionFontColor": "#231F20",
-                    "legendIconSides": "4",
-                    "legendIconBgAlpha": "100",
-                    "legendIconAlpha": "100",
-                    "legendPosition": "top",
-                    "canvasPadding": "0",
-                    "chartLeftMargin": "20",
-                    "chartTopMargin": "10",
-                    "chartRightMargin": "40",
-                    "chartBottomMargin": "10",
-                    "xAxisNameFontSize": "14",
-                    "labelFontSize": "12",
-                    "labelFontColor": "#716E6E",
-                    "xAxisNameFontColor": "#716E6E",
-                    "yAxisNameFontSize": "14",
-                    "yAxisValueFontSize": "12",
-                    "yAxisValueFontColor": "#716E6E",
-                    "yAxisNameFontColor": "#716E6E"
-                  }
-                }
-              },
-              "key": "3lvh7n09cf",
+              "text": "Submit",
+              "isDisabled": false,
+              "key": "pbsyvgkfh0",
               "isDeprecated": false,
-              "rightColumn": 49,
-              "widgetId": "wgqdory2to",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "rightColumn": 36,
+              "isDefaultClickDisabled": true,
+              "widgetId": "93oduj21ig",
               "isVisible": true,
+              "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
-              "labelOrientation": "auto",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "yAxisName": "Revenue($)",
-              "chartName": "Sales Report",
+              "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Product Line",
-              "chartType": "COLUMN_CHART"
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
             }
           ]
         },
