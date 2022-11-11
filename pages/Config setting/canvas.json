@@ -80,7 +80,7 @@
                   ],
                   "children": [
                     {
-                      "widgetName": "Text1CopyCopyCopy",
+                      "widgetName": "zoom_value",
                       "dynamicPropertyPathList": [
                         {
                           "key": "fontSize"
@@ -609,7 +609,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{\nUpdateConfig.run(\n{\n\t\"configKey\": \"lesson.lessonmgmt.zoom_selection\",\n\t\"configValue\": select_zoom.selectedOptionValue\n}\n);\ncloseModal(Modal1);\n}}",
+                      "onClick": "{{\nUpdateConfig.run(\n{\n\t\"configKey\": \"lesson.lessonmgmt.zoom_selection\",\n\t\"configValue\": select_zoom.selectedOptionValue\n}\n);\ncloseModal(\"Modal1\");\n}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
