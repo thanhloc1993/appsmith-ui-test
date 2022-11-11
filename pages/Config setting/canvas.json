@@ -120,7 +120,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{ JSObject1.getConfig().config_value }}",
+                      "text": "{{ JSObject1.getConfig }}",
                       "key": "z5azu3xzuu",
                       "isDeprecated": false,
                       "rightColumn": 16,
@@ -431,7 +431,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0];\n}"
+                "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0].config_value;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0];\n}",
+      "body": "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0].config_value;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0];\n}"
+      "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0].config_value;\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
