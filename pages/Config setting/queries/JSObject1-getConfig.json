@@ -19,14 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async key => {\n  console.log(key);\n  let config = await GetConfig.data({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  if (config.data) {\n    let obj = config.data.external_configuration_value.find(x => {\n      return x.config_value == key;\n    });\n    return obj ? obj.object_value : \"\";\n  }\n  return \"\";\n}",
+      "body": "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    const result = config.data.external_configuration_value.reduce(function (map, obj) {\n      map[obj.config_key] = obj.config_value;\n      return map;\n    }, {});\n    return result;\n  }\n  return [];\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +34,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async key => {\n  console.log(key);\n  let config = await GetConfig.data({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  if (config.data) {\n    let obj = config.data.external_configuration_value.find(x => {\n      return x.config_value == key;\n    });\n    return obj ? obj.object_value : \"\";\n  }\n  return \"\";\n}"
+      "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    const result = config.data.external_configuration_value.reduce(function (map, obj) {\n      map[obj.config_key] = obj.config_value;\n      return map;\n    }, {});\n    return result;\n  }\n  return [];\n}"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
