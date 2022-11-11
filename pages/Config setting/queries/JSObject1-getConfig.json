@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async key => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    let obj = config.data.external_configuration_value.find(x => x.object_key == key);\n    return obj ? obj.object_value : \"\";\n  }\n  return \"\";\n}",
+      "body": "async key => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  if (config.data) {\n    let obj = config.data.external_configuration_value.find(x => {\n      return x.config_value == key;\n    });\n    return obj ? obj.object_value : \"\";\n  }\n  return \"\";\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async key => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    let obj = config.data.external_configuration_value.find(x => x.object_key == key);\n    return obj ? obj.object_value : \"\";\n  }\n  return \"\";\n}"
+      "async key => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  if (config.data) {\n    let obj = config.data.external_configuration_value.find(x => {\n      return x.config_value == key;\n    });\n    return obj ? obj.object_value : \"\";\n  }\n  return \"\";\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
