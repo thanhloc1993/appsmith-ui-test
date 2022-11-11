@@ -120,7 +120,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{ JSObject1.getConfig.bind(\"lesson.lessonmgmt.zoom_selection\").data}}",
+                      "text": "{{ JSObject1.getConfig(\"lesson.lessonmgmt.zoom_selection\").data }}",
                       "key": "z5azu3xzuu",
                       "isDeprecated": false,
                       "rightColumn": 16,
