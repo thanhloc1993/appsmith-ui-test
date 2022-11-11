@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Config setting",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tgetConfig: async () => {\n\t\t//use async-await or promises\n\t\tlet config = await GetConfig.run(\n\t\t\t{\n\t\t\t\tkeys: [\"lesson.lessonmgmt.zoom_selection\"]\n\t\t\t}\n\t\t)\n\t\tconsole.log(config);\n\t\treturn config;\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Config setting_JSObject1",
+  "deleted": false,
+  "gitSyncId": "636db6ffc4512f2ab76970fd_636de5a7c4512f2ab7697122"
+}
