@@ -609,7 +609,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{\nUpdateConfig.run(\n{\n\t\"configKey\": \"lesson.lessonmgmt.zoom_selection\",\n\t\"configValue\": select_zoom.selectedOptionValue\n}\n)\n}}",
+                      "onClick": "{{\nUpdateConfig.run(\n{\n\t\"configKey\": \"lesson.lessonmgmt.zoom_selection\",\n\t\"configValue\": select_zoom.selectedOptionValue\n}\n);\ncloseModal(Modal1);\n}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
