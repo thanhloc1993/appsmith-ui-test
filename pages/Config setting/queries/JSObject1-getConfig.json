@@ -24,7 +24,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -37,7 +37,7 @@
     "jsonPathKeys": [
       "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0];\n}"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

@@ -421,7 +421,22 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Config setting_JSObject1.getConfig",
+              "name": "JSObject1.getConfig",
+              "collectionId": "Config setting_JSObject1",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0];\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Config setting",
