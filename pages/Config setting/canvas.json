@@ -120,7 +120,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{JSObject1.getConfig()}}",
+                      "text": "{{JSObject1.getConfig().config_value}}",
                       "key": "z5azu3xzuu",
                       "isDeprecated": false,
                       "rightColumn": 16,
