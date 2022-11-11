@@ -120,7 +120,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{ JSObject1.getConfig }}",
+                      "text": "{{ JSObject1.getConfig(\"lesson.lessonmgmt.zoom_selection\").data }}",
                       "key": "z5azu3xzuu",
                       "isDeprecated": false,
                       "rightColumn": 16,
@@ -421,22 +421,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Config setting_JSObject1.getConfig",
-              "name": "JSObject1.getConfig",
-              "collectionId": "Config setting_JSObject1",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  console.log(config);\n  return config.data.external_configuration_value[0].config_value;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Config setting",
