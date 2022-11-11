@@ -120,7 +120,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{ \nJSObject1.getConfig.data[\"lesson.lessonmgmt.zoom_selection\"]\n}}",
+                      "text": "{{ \nappsmith.store.zoom_select ? appsmith.store.zoom_select  :\nJSObject1.getConfig.data[\"lesson.lessonmgmt.zoom_selection\"]\n}}",
                       "key": "z5azu3xzuu",
                       "isDeprecated": false,
                       "rightColumn": 16,
@@ -609,7 +609,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{\nUpdateConfig.run(\n{\n\t\"configKey\": \"lesson.lessonmgmt.zoom_selection\",\n\t\"configValue\": select_zoom.selectedOptionValue\n}\n);\ncloseModal(\"Modal1\");\n}}",
+                      "onClick": "{{\nUpdateConfig.run(\n{\n\t\"configKey\": \"lesson.lessonmgmt.zoom_selection\",\n\t\"configValue\": select_zoom.selectedOptionValue\n}\n);\ncloseModal(\"Modal1\");\nstoreValue(\"zoom_select\",select_zoom.selectedOptionValue);\n}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
