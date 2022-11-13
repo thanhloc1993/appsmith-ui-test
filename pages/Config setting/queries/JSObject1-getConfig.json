@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    const result = config.data.external_configuration_value.reduce(function (map, obj) {\n      map[obj.config_key] = obj.config_value;\n      return map;\n    }, {});\n    return result;\n  }\n  return [];\n}",
+      "body": "async () => {\n  addMessageHandler(e => console.log(e));\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    const result = config.data.external_configuration_value.reduce(function (map, obj) {\n      map[obj.config_key] = obj.config_value;\n      return map;\n    }, {});\n    return result;\n  }\n  return [];\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    const result = config.data.external_configuration_value.reduce(function (map, obj) {\n      map[obj.config_key] = obj.config_value;\n      return map;\n    }, {});\n    return result;\n  }\n  return [];\n}"
+      "async () => {\n  addMessageHandler(e => console.log(e));\n  let config = await GetConfig.run({\n    keys: [\"lesson.lessonmgmt.zoom_selection\"]\n  });\n  if (config.data) {\n    const result = config.data.external_configuration_value.reduce(function (map, obj) {\n      map[obj.config_key] = obj.config_value;\n      return map;\n    }, {});\n    return result;\n  }\n  return [];\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
