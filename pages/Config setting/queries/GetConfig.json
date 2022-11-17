@@ -33,7 +33,6 @@
       "body": "{\n\tquery: '\n\t\tquery Architecture_GetExternalConfigsByKeys($keys: [String!]!) {\n\t\t\texternal_configuration_value(where: {config_key: {_in: $keys}}) {\n\t\t\t\tconfiguration_id\n\t\t\t\tconfig_value\n\t\t\t\tconfig_key\n\t\t\t\tlast_editor\n\t\t\t}\n\t\t}\n\t',\n\tvariables: {\n\t\t\"keys\": {{this.params.keys}}\n\t}\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
-      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
