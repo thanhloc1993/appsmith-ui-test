@@ -1,5 +1,9 @@
 {
   "pages": [
+    {
+      "id": "list-course",
+      "isDefault": true
+    }
   ],
   "viewMode": false,
   "appIsExample": false,
