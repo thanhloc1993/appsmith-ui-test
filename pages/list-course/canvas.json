@@ -217,7 +217,7 @@
                 "BLUE"
               ],
               "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "ae71jg34ut",
+              "widgetId": "ae71jg34u1t",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 2,
@@ -253,9 +253,6 @@
               "parentColumnSpace": 20.0625,
               "leftColumn": 17,
               "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
                 {
                   "key": "borderRadius"
                 }
