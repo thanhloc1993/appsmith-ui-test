@@ -113,11 +113,7 @@
                   "key": "isVisible"
                 }
               ],
-<<<<<<< HEAD
-              "text": "Unleash 1",
-=======
               "text": "Unleash 5",
->>>>>>> origin/staging
               "isDisabled": false,
               "key": "3ldmlhpbmz",
               "isDeprecated": false,
@@ -136,21 +132,6 @@
               "placement": "CENTER"
             },
             {
-<<<<<<< HEAD
-              "widgetName": "Audio1",
-              "displayName": "Audio",
-              "iconSVG": "/static/media/icon.cb54df7a09016b0af5e520895be927b9.svg",
-              "searchTags": [
-                "mp3",
-                "sound",
-                "wave",
-                "player"
-              ],
-              "topRow": 32,
-              "bottomRow": 36,
-              "parentRowSpace": 10,
-              "type": "AUDIO_WIDGET",
-=======
               "boxShadow": "none",
               "widgetName": "AudioRecorder1",
               "displayName": "Audio Recorder",
@@ -163,130 +144,10 @@
               "bottomRow": 18,
               "parentRowSpace": 10,
               "type": "AUDIO_RECORDER_WIDGET",
->>>>>>> origin/staging
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "leftColumn": 16,
-<<<<<<< HEAD
-              "dynamicBindingPathList": [],
-              "key": "dnw34wwdn7",
-              "isDeprecated": false,
-              "rightColumn": 44,
-              "widgetId": "r5ebza2q16",
-              "isVisible": true,
-              "version": 1,
-              "url": "https://assets.appsmith.com/widgets/birds_chirping.mp3",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "autoPlay": false
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Chart1",
-              "allowScroll": false,
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-              "searchTags": [
-                "graph",
-                "visuals",
-                "visualisations"
-              ],
-              "topRow": 38,
-              "bottomRow": 70,
-              "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
-              "hideCard": false,
-              "chartData": {
-                "1xeget1p2s": {
-                  "seriesName": "Sales",
-                  "data": [
-                    {
-                      "x": "Product1",
-                      "y": 20000
-                    },
-                    {
-                      "x": "Product2",
-                      "y": 22000
-                    },
-                    {
-                      "x": "Product3",
-                      "y": 32000
-                    }
-                  ]
-                }
-              },
-              "animateLoading": true,
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 20.0625,
-              "leftColumn": 10,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "fontFamily"
-                }
-              ],
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ],
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion",
-                    "alignCaptionWithCanvas": 1,
-                    "captionFontSize": "24",
-                    "captionAlignment": "center",
-                    "captionPadding": "20",
-                    "captionFontColor": "#231F20",
-                    "legendIconSides": "4",
-                    "legendIconBgAlpha": "100",
-                    "legendIconAlpha": "100",
-                    "legendPosition": "top",
-                    "canvasPadding": "0",
-                    "chartLeftMargin": "20",
-                    "chartTopMargin": "10",
-                    "chartRightMargin": "40",
-                    "chartBottomMargin": "10",
-                    "xAxisNameFontSize": "14",
-                    "labelFontSize": "12",
-                    "labelFontColor": "#716E6E",
-                    "xAxisNameFontColor": "#716E6E",
-                    "yAxisNameFontSize": "14",
-                    "yAxisValueFontSize": "12",
-                    "yAxisValueFontColor": "#716E6E",
-                    "yAxisNameFontColor": "#716E6E"
-                  }
-                }
-              },
-              "key": "a6tydiiswd",
-              "isDeprecated": false,
-              "rightColumn": 34,
-              "widgetId": "aub28vg2qi",
-=======
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -300,21 +161,10 @@
               "isDeprecated": false,
               "rightColumn": 32,
               "widgetId": "dr3kdwt5kx",
->>>>>>> origin/staging
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
-<<<<<<< HEAD
-              "labelOrientation": "auto",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "yAxisName": "Revenue($)",
-              "chartName": "Sales Report",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Product Line",
-              "chartType": "COLUMN_CHART"
-=======
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -436,7 +286,6 @@
               "closeOnSelection": true,
               "maxDate": "2121-12-31T18:29:00.000Z",
               "minDynamicHeight": 4
->>>>>>> origin/staging
             }
           ]
         },
