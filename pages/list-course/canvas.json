@@ -292,6 +292,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
+        "id": "list-course",
         "deleted": false,
         "policies": [],
         "userPermissions": []
