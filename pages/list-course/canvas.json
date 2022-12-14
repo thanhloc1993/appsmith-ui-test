@@ -133,6 +133,7 @@
             }
           ]
         },
+        >>
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": false,
