@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "aaa",
+      "path": "vvvv",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
