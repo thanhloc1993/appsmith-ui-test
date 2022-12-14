@@ -3,10 +3,6 @@
     {
       "id": "list-course",
       "isDefault": true
-    },
-    {
-      "id": "architecture-lesson-list",
-      "isDefault": false
     }
   ],
   "viewMode": false,
