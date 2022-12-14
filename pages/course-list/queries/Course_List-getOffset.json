@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "submitFuc",
-    "fullyQualifiedName": "JSObject1.submitFuc",
+    "name": "getOffset",
+    "fullyQualifiedName": "Course_List.getOffset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "list-course",
-    "collectionId": "list-course_JSObject1",
+    "pageId": "course-list",
+    "collectionId": "course-list_Course_List",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  console.log(\"nhan button\");\n  return;\n}",
+      "body": "() => {\n  return CourseTable.pageOffset;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  console.log(\"nhan button\");\n  return;\n}"
+      "() => {\n  return CourseTable.pageOffset;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course_JSObject1.submitFuc",
+  "id": "course-list_Course_List.getOffset",
   "deleted": false,
-  "gitSyncId": "635a42eddc1d1b603e048648_635a50b7dc1d1b603e04868b"
+  "gitSyncId": "637dc0bc0b93ed5dcbd281d4_637f447b2741490e0fbf5be4"
 }

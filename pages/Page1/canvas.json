@@ -1,0 +1,509 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 850,
+          "containerStyle": "none",
+          "snapRows": 85,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 69,
+          "minHeight": 860,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": false,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 0,
+              "isSortable": true,
+              "onPageChange": "{{StudentJS.loadStudent()}}",
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.editActions.saveButtonColor"
+                },
+                {
+                  "key": "childStylesheet.editActions.saveBorderRadius"
+                },
+                {
+                  "key": "childStylesheet.editActions.discardButtonColor"
+                },
+                {
+                  "key": "childStylesheet.editActions.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.user_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.full_name_phonetic.computedValue"
+                },
+                {
+                  "key": "primaryColumns.email.computedValue"
+                },
+                {
+                  "key": "primaryColumns.phone_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.country.computedValue"
+                },
+                {
+                  "key": "primaryColumns.last_login_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.resource_path.computedValue"
+                },
+                {
+                  "key": "primaryColumns.student.computedValue"
+                },
+                {
+                  "key": "totalRecordsCount"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "loadingTable"
+                }
+              ],
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": false,
+              "version": 1,
+              "totalRecordsCount": "{{Student_Count.data.data.users_aggregate.aggregate.count}}",
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "user_id",
+                "name",
+                "full_name_phonetic",
+                "email",
+                "phone_number",
+                "country",
+                "last_login_date",
+                "resource_path",
+                "student"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "loadingTable"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 64,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.03125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                }
+              ],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "user_id": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "user_id",
+                  "id": "user_id",
+                  "alias": "user_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "user_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"user_id\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "name": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "name",
+                  "id": "name",
+                  "alias": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "full_name_phonetic": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "full_name_phonetic",
+                  "id": "full_name_phonetic",
+                  "alias": "full_name_phonetic",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "full_name_phonetic",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"full_name_phonetic\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "email": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "email",
+                  "id": "email",
+                  "alias": "email",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "email",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "phone_number": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "phone_number",
+                  "id": "phone_number",
+                  "alias": "phone_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "phone_number",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone_number\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "country": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "country",
+                  "id": "country",
+                  "alias": "country",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "country",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"country\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "last_login_date": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "last_login_date",
+                  "id": "last_login_date",
+                  "alias": "last_login_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "last_login_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_login_date\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "resource_path": {
+                  "allowCellWrapping": false,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "resource_path",
+                  "id": "resource_path",
+                  "alias": "resource_path",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "resource_path",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"resource_path\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "student": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "student",
+                  "id": "student",
+                  "alias": "student",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "student",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"student\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "ejvz6bs2g8",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "uobturptet",
+              "tableData": "{{Student.data.data.users}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "loadingTable": "{{appsmith.store.isLoading}}",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Student",
+              "name": "Student",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Table1.pageOffset",
+                "appsmith.store.token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_StudentJS.loadStudent",
+              "name": "StudentJS.loadStudent",
+              "collectionId": "Page1_StudentJS",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  storeValue(\"isLoading\", true);\n  const students = await Student.run();\n  storeValue(\"students\", students.data);\n  storeValue(\"isLoading\", false);\n  return students.data;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_Student_Count",
+              "name": "Student_Count",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "6388807001649205f3fde559_639037c57bd6956acf163e08"
+}

@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "Course_List",
+    "pageId": "course-list",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCourse: async () => {\n\t\tlet config = await CourseList.run();\n\t\treturn config.data[\"courses\"] || [];\n\t},\n\tgetOffset: () => {\n\t\treturn CourseTable.pageOffset;\n\t},\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "course-list_Course_List",
+  "deleted": false,
+  "gitSyncId": "637dc0bc0b93ed5dcbd281d4_637de2ec0b93ed5dcbd2825f"
+}

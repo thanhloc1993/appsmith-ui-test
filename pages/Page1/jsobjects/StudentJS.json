@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "StudentJS",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tloadStudent: async () => {\n\t\tstoreValue(\"isLoading\", true);\n\t\tconst students = await Student.run();\n\t\tstoreValue(\"students\", students.data)\n\t\tstoreValue(\"isLoading\", false);\n\t\treturn students.data;\n\t},\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Page1_StudentJS",
+  "deleted": false,
+  "gitSyncId": "6388807001649205f3fde559_63904b2d7bd6956acf163e22"
+}

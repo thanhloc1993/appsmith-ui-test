@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_Lesson_Detail",
+    "pageId": "architecture-lesson-detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tloadLessonDetail: async () => {\n\t\t//use async-await or promises\n\t\tconst lessons = await Arch_Lesson_Detail.run(\n\t\t\t{\n\t\t\t\tlesson_id: appsmith.URL.queryParams[\"lessonId\"]\n\t\t\t}\n\t\t) \n\t\tif (lessons && lessons.data && lessons.data.lessons.length > 0) {\n\t\t\treturn lessons.data.lessons[0];\n\t\t}\n\t\treturn null;\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-lesson-detail_JS_Lesson_Detail",
+  "deleted": false,
+  "gitSyncId": "6389a7572a4a287037ca0fb6_6389cbd72a4a287037ca0ff4"
+}

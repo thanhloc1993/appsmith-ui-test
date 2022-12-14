@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "getTablePastOffset",
+    "fullyQualifiedName": "JS_LessonList.getTablePastOffset",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "list-course",
-    "collectionId": "list-course_JSObject1",
+    "pageId": "architecture-lesson-list",
+    "collectionId": "architecture-lesson-list_JS_LessonList",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {}",
+      "body": "() => {\n  return table_past_lesson.pageOffset;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {}"
+      "() => {\n  return table_past_lesson.pageOffset;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course_JSObject1.myFun1",
+  "id": "architecture-lesson-list_JS_LessonList.getTablePastOffset",
   "deleted": false,
-  "gitSyncId": "635a42eddc1d1b603e048648_635a50b7dc1d1b603e04868a"
+  "gitSyncId": "6385e81eae597f4a7a4e81fd_638708f8ae597f4a7a4e8288"
 }
