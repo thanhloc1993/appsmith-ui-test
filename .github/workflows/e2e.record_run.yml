@@ -11,8 +11,8 @@ jobs:
   pr-description:
     if: ${{ contains(github.event.label.name, 'Trigger record test') }}
 
-    runs-on: ['self-hosted', '60m-240mi', 'spot', 'persistent']
-    
+    runs-on: [self-hosted, custom-runner, small-runner]
+
     steps:
     - name: Checkout
       uses: actions/checkout@v1
