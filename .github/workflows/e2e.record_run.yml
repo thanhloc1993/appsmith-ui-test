@@ -8,11 +8,11 @@ on:
     types: [minimal-running]
 
 jobs:
-   pr-description:
+  pr-description:
     if: ${{ contains(github.event.label.name, 'Trigger record test') }}
 
-    runs-on: [self-hosted, custom-runner, small-runner]
-
+    runs-on: ['self-hosted', '60m-240mi', 'spot', 'persistent']
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v1
