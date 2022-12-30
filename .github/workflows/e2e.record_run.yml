@@ -4,9 +4,6 @@ on:
   pull_request:
     types: [labeled]
 
-  repository_dispatch:
-    types: [minimal-running]
-
 jobs:
   pr-description:
     if: ${{ contains(github.event.label.name, 'Trigger record test') }}
