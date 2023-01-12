@@ -1,0 +1,21 @@
+{
+  "pages": [
+    {
+      "id": "Custom entity",
+      "isDefault": true
+    },
+    {
+      "id": "Entry Exit",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#F4FFDE",
+  "icon": "arrow-down",
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
