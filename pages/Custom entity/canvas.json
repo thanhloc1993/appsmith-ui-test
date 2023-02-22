@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1292,
+          "bottomRow": 1290,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -79,7 +79,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "CREATE TABLE IF NOT EXISTS public.e2e_student_entryexit_records ( \n     entryexit_id text UNIQUE NOT NULL, \n     student_id text NOT NULL,\n    entry_at timestamp with time zone NOT NULL,\n    exit_at timestamp with time zone,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT student_entryexit_records_pk PRIMARY KEY (entryexit_id)\n);",
+              "defaultText": "CREATE TABLE IF NOT EXISTS manabie.student_entryexit_records ( \n     entryexit_id text UNIQUE NOT NULL, \n     student_id text NOT NULL,\n    entry_at timestamp with time zone NOT NULL,\n    exit_at timestamp with time zone,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT student_entryexit_records_pk PRIMARY KEY (entryexit_id)\n);",
               "minDynamicHeight": 4
             },
             {
@@ -94,7 +94,7 @@
                 "textarea"
               ],
               "topRow": 4,
-              "bottomRow": 11,
+              "bottomRow": 9,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -135,7 +135,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "e2e_student_entryexit_records",
+              "defaultText": "student_entryexit_records",
               "minDynamicHeight": 4
             },
             {

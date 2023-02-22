@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 840,
+          "bottomRow": 830,
           "containerStyle": "none",
           "snapRows": 83,
           "parentRowSpace": 1,
@@ -35,8 +35,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 34,
-              "bottomRow": 38,
+              "topRow": 25,
+              "bottomRow": 29,
               "parentRowSpace": 10,
               "groupButtons": {
                 "groupButton1": {
@@ -118,7 +118,7 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "leftColumn": 16,
+              "leftColumn": 17,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -139,7 +139,7 @@
               "key": "1iu4qk4cjp",
               "orientation": "horizontal",
               "isDeprecated": false,
-              "rightColumn": 40,
+              "rightColumn": 41,
               "widgetId": "u2ihgnlxn3",
               "isVisible": true,
               "version": 1,
