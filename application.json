@@ -7,6 +7,10 @@
     {
       "id": "Entry Exit",
       "isDefault": false
+    },
+    {
+      "id": "Entry Exit Records",
+      "isDefault": false
     }
   ],
   "viewMode": false,
