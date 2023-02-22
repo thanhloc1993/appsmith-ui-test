@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 760,
+          "bottomRow": 710,
           "containerStyle": "none",
           "snapRows": 76,
           "parentRowSpace": 1,
@@ -46,7 +46,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 22,
+              "leftColumn": 20,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -193,7 +193,7 @@
               "key": "a10i8hl36f",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 45,
+              "rightColumn": 43,
               "dynamicHeight": "FIXED",
               "widgetId": "5nmgnk6fcc",
               "containerStyle": "card",
