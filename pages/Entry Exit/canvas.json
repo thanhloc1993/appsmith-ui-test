@@ -26,7 +26,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "scannerLayout": "CLICK_TO_SCAN",
+              "scannerLayout": "ALWAYS_ON",
               "boxShadow": "none",
               "widgetName": "qr_code",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
