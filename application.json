@@ -7,10 +7,6 @@
     {
       "id": "Entry Exit",
       "isDefault": false
-    },
-    {
-      "id": "scan-qrcode",
-      "isDefault": false
     }
   ],
   "viewMode": false,

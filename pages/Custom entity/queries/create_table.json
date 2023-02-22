@@ -28,7 +28,7 @@
         },
         {
           "key": "Authorization",
-          "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2NzQ3NWMwM2NjNjQwMjY0YjBhOTRkMTQ0N2YzYjU3OTBiMmFiZDQifQ.eyJpc3MiOiJtYW5hYmllIiwic3ViIjoiQzJnbTYyT3ZZN1FkTUdhRTBmZktlOVgxZFhDMyIsImF1ZCI6Im1hbmFiaWUtc3RhZyIsImV4cCI6MTY3Njk3MjkwNywiaWF0IjoxNjc2OTY5MzAyLCJqdGkiOiIwMUdTU0pIUE00NDFaQ05OREpGMFRaRE1DVyIsImh0dHBzOi8vaGFzdXJhLmlvL2p3dC9jbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiJdLCJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiIsIngtaGFzdXJhLXVzZXItaWQiOiJDMmdtNjJPdlk3UWRNR2FFMGZmS2U5WDFkWEMzIiwieC1oYXN1cmEtc2Nob29sLWlkcyI6InsxMDAwMDB9IiwieC1oYXN1cmEtdXNlci1ncm91cCI6IlVTRVJfR1JPVVBfU0NIT09MX0FETUlOIiwieC1oYXN1cmEtcmVzb3VyY2UtcGF0aCI6IjEwMDAwMCJ9LCJtYW5hYmllIjp7ImFsbG93ZWRfcm9sZXMiOlsiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iXSwiZGVmYXVsdF9yb2xlIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJ1c2VyX2lkIjoiQzJnbTYyT3ZZN1FkTUdhRTBmZktlOVgxZFhDMyIsInNjaG9vbF9pZHMiOlsiMTAwMDAwIl0sInVzZXJfZ3JvdXAiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiIsInJlc291cmNlX3BhdGgiOiIxMDAwMDAifSwicmVzb3VyY2VfcGF0aCI6IjEwMDAwMCIsInVzZXJfZ3JvdXAiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiJ9.BtepKV9_ni9YX1OZoUnrvogYSH3uETgHpzMMR-aeOX43xwOpaB5A6byN0-EQ0imgClPDtlk9ezQTKsTv5fXvOB1z7Iwbf_sTE_GVfj2_S23AC4dmwararQ4Lv4L9oNeYnbrJSAp37eKpL0ExXUzgu7_RQDMtbGWFmh34CD0SblOunHYpNHdIOG-n_fHHGtvLtxdm5yVPHQFF1kvG20BjP06mnKXt3Uy9dUf_oSBDHcT8LsZzhFoV_w-ZAV_SNQcA9ITxtRw1A84I9LoKqhouHjDfq7OtE0bAyplBqGlE1P5y6uDNglbn8X3uSQRE8C2EobJK6jYGeHQj-hhUNOJpXw"
+          "value": "{{appsmith.store.token}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -50,12 +50,16 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.token",
       "{\n\t \"sql\": input_sql.text,\n\t \"table_name\": input_table.text\n }"
     ],
     "userSetOnLoad": false,
