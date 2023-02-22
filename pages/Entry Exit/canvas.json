@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1060,
+          "bottomRow": 790,
           "containerStyle": "none",
           "snapRows": 76,
           "parentRowSpace": 1,
@@ -26,131 +26,109 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Container1",
-              "borderColor": "#E0DEDE",
-              "isCanvas": true,
-              "displayName": "Container",
-              "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+              "scannerLayout": "CLICK_TO_SCAN",
+              "boxShadow": "none",
+              "widgetName": "qr_code",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Code Scanner",
+              "iconSVG": "/static/media/icon.c4a2da6d32c0f212d031fca147e4f7cb.svg",
               "searchTags": [
-                "div",
-                "parent",
-                "group"
+                "barcode scanner",
+                "qr scanner",
+                "code detector",
+                "barcode reader"
               ],
-              "topRow": 0,
-              "bottomRow": 98,
+              "topRow": 19,
+              "bottomRow": 65,
               "parentRowSpace": 10,
-              "type": "CONTAINER_WIDGET",
+              "type": "CODE_SCANNER_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onCodeDetected"
+                }
+              ],
+              "leftColumn": 20,
               "dynamicBindingPathList": [
                 {
-                  "key": "borderRadius"
+                  "key": "buttonColor"
                 },
                 {
-                  "key": "boxShadow"
+                  "key": "borderRadius"
                 }
               ],
-              "children": [
-                {
-                  "widgetName": "Canvas1",
-                  "displayName": "Canvas",
-                  "topRow": 0,
-                  "bottomRow": 970,
-                  "parentRowSpace": 1,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "hideCard": true,
-                  "minHeight": 980,
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "dynamicBindingPathList": [],
-                  "children": [
-                    {
-                      "scannerLayout": "ALWAYS_ON",
-                      "boxShadow": "none",
-                      "widgetName": "qr_code",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Code Scanner",
-                      "iconSVG": "/static/media/icon.c4a2da6d32c0f212d031fca147e4f7cb.svg",
-                      "searchTags": [
-                        "barcode scanner",
-                        "qr scanner",
-                        "code detector",
-                        "barcode reader"
-                      ],
-                      "topRow": 22,
-                      "bottomRow": 68,
-                      "parentRowSpace": 10,
-                      "type": "CODE_SCANNER_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 20.0625,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onCodeDetected"
-                        }
-                      ],
-                      "leftColumn": 21,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "isDisabled": false,
-                      "key": "1hmfyfi38a",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 46,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "kbl0tyhjv0",
-                      "onCodeDetected": "{{Js_entry_exit.scanQrcode()}}",
-                      "isVisible": true,
-                      "label": "Scan a QR/Barcode",
-                      "version": 1,
-                      "parentId": "o31cfzshji",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "placement": "CENTER"
-                    }
-                  ],
-                  "key": "ny7lczjrhk",
-                  "isDeprecated": false,
-                  "rightColumn": 481.5,
-                  "detachFromLayout": true,
-                  "widgetId": "o31cfzshji",
-                  "containerStyle": "none",
-                  "isVisible": true,
-                  "version": 1,
-                  "parentId": "bsfjuu3hqb",
-                  "renderMode": "CANVAS",
-                  "isLoading": false
-                }
-              ],
-              "borderWidth": "1",
-              "key": "a10i8hl36f",
-              "backgroundColor": "#3b82f6",
+              "isDisabled": false,
+              "key": "1hmfyfi38a",
+              "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 64,
-              "dynamicHeight": "FIXED",
-              "widgetId": "bsfjuu3hqb",
-              "containerStyle": "card",
+              "rightColumn": 45,
+              "isDefaultClickDisabled": true,
+              "widgetId": "kbl0tyhjv0",
+              "onCodeDetected": "{{Js_entry_exit.scanQrcode()}}",
               "isVisible": true,
+              "label": "Scan a QR/Barcode",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 63,
-              "minDynamicHeight": 10
+              "placement": "CENTER"
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 66,
+              "bottomRow": 71,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 25,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Hover your QR code",
+              "key": "ggbflojms3",
+              "isDeprecated": false,
+              "rightColumn": 41,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "6hyk2pvyio",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 66,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 71,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
             }
           ]
         },
