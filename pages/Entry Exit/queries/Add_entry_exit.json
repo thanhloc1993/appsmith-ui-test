@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.\"student_entryexit_records\" (\"entryexit_id\", \"student_id\", \"entry_at\", \"exit_at\", \"created_at\", \"updated_at\")\n  VALUES ({{this.params.entryexit_id}}, {{this.params.student_id}}, {{this.params.entry_at}}, {{this.params.exit_at}} , now(), now());",
+      "body": "INSERT INTO manabie.\"student_entryexit_records\" (\"entryexit_id\", \"student_id\", \"entry_at\", \"exit_at\", \"created_at\", \"updated_at\")\n  VALUES ({{this.params.entryexit_id}}, {{this.params.student_id}}, {{this.params.entry_at}}, {{this.params.exit_at}} , now(), now());",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
