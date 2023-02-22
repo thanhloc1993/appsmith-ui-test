@@ -30,7 +30,7 @@
               "widgetName": "search_student",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "onSubmit": "{{CourseList.run()}}",
+              "onSubmit": "{{Entry_Exit_List.run()}}",
               "searchTags": [
                 "form",
                 "text input",
@@ -151,6 +151,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 11,
               "isSortable": false,
+              "onPageChange": "{{Entry_Exit_List.run()}}",
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
@@ -208,18 +209,25 @@
                 },
                 {
                   "key": "primaryColumns.created_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.total.computedValue"
+                },
+                {
+                  "key": "totalRecordsCount"
                 }
               ],
               "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": false,
               "isVisible": true,
               "fontStyle": "",
               "enableClientSideSearch": true,
               "version": 1,
-              "totalRecordsCount": 0,
+              "totalRecordsCount": "{{Entry_Exit_List.data.length > 0 ? Entry_Exit_List.data[0].total : 0}}",
               "isLoading": false,
               "childStylesheet": {
                 "button": {
@@ -254,7 +262,8 @@
                 "name",
                 "created_at",
                 "entry_at",
-                "exit_at"
+                "exit_at",
+                "total"
               ],
               "dynamicPropertyPathList": [],
               "compactMode": "DEFAULT",
@@ -272,7 +281,11 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 20.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "entry_at": {
@@ -298,7 +311,7 @@
                   "label": "Entry Time",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"entry_at\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"entry_at\"] ? moment(currentRow[\"entry_at\"]).format('HH-mm') : \"\"))}}",
                   "translationJp": "",
                   "validation": {}
                 },
@@ -325,7 +338,7 @@
                   "label": "Exit Time",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"exit_at\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"exit_at\"] ? moment(currentRow[\"exit_at\"]).format('HH-mm') : \"\"))}}",
                   "translationJp": "",
                   "validation": {}
                 },
@@ -379,7 +392,34 @@
                   "label": "Date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"] ? moment(currentRow[\"created_at\"]).format('YYYY-MM-DD') : \"\"))}}",
+                  "translationJp": "",
+                  "validation": {}
+                },
+                "total": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "total",
+                  "id": "total",
+                  "alias": "total",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "total",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"total\"]))}}",
                   "translationJp": "",
                   "validation": {}
                 }
@@ -393,6 +433,7 @@
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
+              "serverSidePaginationEnabled": true,
               "renderMode": "CANVAS",
               "loadingTable": false,
               "horizontalAlignment": "LEFT",
@@ -409,7 +450,9 @@
               "name": "Entry_Exit_List",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Table1.pageOffset"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

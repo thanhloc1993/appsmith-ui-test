@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT u.name, s.entry_at, s.exit_at, s.created_at FROM manabie.student_entryexit_records s\nleft join manabie.user_basic_info u on s.student_id = u.user_id\n ORDER BY s.created_at desc LIMIT 10 offset 0;",
+      "body": "SELECT u.name, s.entry_at, s.exit_at, s.created_at, COUNT(*) OVER() AS total  FROM manabie.student_entryexit_records s\nleft join manabie.user_basic_info u on s.student_id = u.user_id\n ORDER BY s.created_at desc LIMIT 10 offset {{Table1.pageOffset}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,17 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Table1.pageOffset"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
