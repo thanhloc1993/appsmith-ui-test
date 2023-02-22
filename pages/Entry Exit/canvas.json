@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 740,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 76,
           "parentRowSpace": 1,
@@ -37,8 +37,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 9,
-              "bottomRow": 66,
+              "topRow": 4,
+              "bottomRow": 63,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -46,7 +46,7 @@
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 17,
+              "leftColumn": 22,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -60,12 +60,12 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 570,
+                  "bottomRow": 590,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 570,
+                  "minHeight": 590,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -83,8 +83,8 @@
                         "code detector",
                         "barcode reader"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 50,
+                      "topRow": 1,
+                      "bottomRow": 51,
                       "parentRowSpace": 10,
                       "type": "CODE_SCANNER_WIDGET",
                       "hideCard": false,
@@ -130,8 +130,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 55,
+                      "topRow": 51,
+                      "bottomRow": 56,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -140,7 +140,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 20.0625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 15,
+                      "leftColumn": 9,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -157,7 +157,7 @@
                       "text": "Hover your QR code",
                       "key": "ggbflojms3",
                       "isDeprecated": false,
-                      "rightColumn": 50,
+                      "rightColumn": 55,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "6hyk2pvyio",
@@ -168,7 +168,7 @@
                       "parentId": "l4sx9jk18v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 48,
+                      "originalTopRow": 51,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 56,
