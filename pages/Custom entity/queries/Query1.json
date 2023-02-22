@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Add_entry_exit",
+    "name": "Query1",
     "datasource": {
       "name": "masterDB",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Entry Exit",
+    "pageId": "Custom entity",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO manabie.\"student_entryexit_records\" (\"entryexit_id\", \"student_id\", \"entry_at\", \"exit_at\", \"created_at\", \"updated_at\")\n  VALUES ({{this.params.entryexit_id}}, {{this.params.student_id}}, {{this.params.entry_at}}, {{this.params.exit_at}} , now(), now());",
+      "body": "SELECT * FROM manabie.student_entryexit_records  LIMIT 10;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,26 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "this.params.entry_at",
-      "this.params.entryexit_id",
-      "this.params.exit_at",
-      "this.params.student_id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Entry Exit_Add_entry_exit",
+  "id": "Custom entity_Query1",
   "deleted": false,
-  "gitSyncId": "63bfcc1f0a83662b10b21f8c_63bfd5a80a83662b10b21fa1"
+  "gitSyncId": "63f2d23fcc933e4ab089f6d4_63f485d75d151344adc6e37a"
 }

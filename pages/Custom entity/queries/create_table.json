@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://160e-42-114-18-242.ap.ngrok.io"
+        "url": "https://api.staging-green.manabie.io"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +28,7 @@
         },
         {
           "key": "Authorization",
-          "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImE1OGFmM2EyZTBkMzdiMDk2NDViNjZmOTRmYWMzM2I5ODZkMmJjMDkifQ.eyJpc3MiOiJtYW5hYmllIiwic3ViIjoidGh1LnZvK2UyZXNjaG9vbEBtYW5hYmllLmNvbSIsImF1ZCI6Im1hbmFiaWUtbG9jYWwiLCJleHAiOjE2NzM1MjIyNjcsImlhdCI6MTY3MzUxODY2MywianRpIjoiMDFHUEpRUkhSNERSTTZFTUNaR0tRNEoxWlQiLCJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJ4LWhhc3VyYS11c2VyLWlkIjoidGh1LnZvK2UyZXNjaG9vbEBtYW5hYmllLmNvbSIsIngtaGFzdXJhLXNjaG9vbC1pZHMiOiJ7LTIxNDc0ODM2NDR9IiwieC1oYXN1cmEtdXNlci1ncm91cCI6IlVTRVJfR1JPVVBfU0NIT09MX0FETUlOIiwieC1oYXN1cmEtcmVzb3VyY2UtcGF0aCI6Ii0yMTQ3NDgzNjQ0In0sIm1hbmFiaWUiOnsiYWxsb3dlZF9yb2xlcyI6WyJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiJdLCJkZWZhdWx0X3JvbGUiOiJVU0VSX0dST1VQX1NDSE9PTF9BRE1JTiIsInVzZXJfaWQiOiJ0aHUudm8rZTJlc2Nob29sQG1hbmFiaWUuY29tIiwic2Nob29sX2lkcyI6WyItMjE0NzQ4MzY0NCJdLCJ1c2VyX2dyb3VwIjoiVVNFUl9HUk9VUF9TQ0hPT0xfQURNSU4iLCJyZXNvdXJjZV9wYXRoIjoiLTIxNDc0ODM2NDQifSwicmVzb3VyY2VfcGF0aCI6Ii0yMTQ3NDgzNjQ0IiwidXNlcl9ncm91cCI6IlVTRVJfR1JPVVBfU0NIT09MX0FETUlOIn0.IbCIiCYj0eX0dAEGZXmDpdvYQngtJZU9mGxcfMOfnWYOy1NkjsWRNcwHxkC-6RU7Q6VZ2KGL0xvtY0pP8rsyEpCncA_L0gcdJHkM4MS4rvZG0ldlr1Gl3aEKGpKwtMcQ-sDnm-NMkDeZ0ozziMXWHXUf6kZaL4UgKlbY10YFeMnN9zCdjvrSpEVOfcpee7kOiR47oOZP16unmcfkTOeQMoVUTFZWkSB75hItNiLXMKNwb9vQUdU4AMXb4ghrj6GMIBUfqLclBXviGf5rOrF6OiLGkxoGttBxL6K9HdrIrKoC9p4Myb00EkKlYOLj6Gwr0636q8qc5tSA3cTUo_gBqA"
+          "value": "{{appsmith.store.token}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -51,12 +50,16 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.token",
       "{\n\t \"sql\": input_sql.text,\n\t \"table_name\": input_table.text\n }"
     ],
     "userSetOnLoad": false,

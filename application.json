@@ -14,6 +14,12 @@
   "unreadCommentThreads": 0,
   "color": "#F4FFDE",
   "icon": "arrow-down",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1292,
+          "bottomRow": 1290,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -37,8 +37,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 12,
-              "bottomRow": 48,
+              "topRow": 9,
+              "bottomRow": 42,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -59,18 +59,18 @@
               ],
               "labelPosition": "Top",
               "labelStyle": "",
-              "inputType": "TEXT",
+              "inputType": "TEXTAREA",
               "isDisabled": false,
               "key": "10iauj29k1",
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 32,
+              "rightColumn": 56,
               "dynamicHeight": "FIXED",
               "widgetId": "9kxgs12dbg",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
-              "label": "SQL\t",
+              "label": "",
               "version": 2,
               "parentId": "0",
               "labelAlignment": "left",
@@ -79,7 +79,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "CREATE TABLE IF NOT EXISTS public.e2e_student_entryexit_records ( \n     entryexit_id text UNIQUE NOT NULL, \n     student_id text NOT NULL,\n    entry_at timestamp with time zone NOT NULL,\n    exit_at timestamp with time zone,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT student_entryexit_records_pk PRIMARY KEY (entryexit_id)\n);",
+              "defaultText": "",
               "minDynamicHeight": 4
             },
             {
@@ -94,7 +94,7 @@
                 "textarea"
               ],
               "topRow": 4,
-              "bottomRow": 11,
+              "bottomRow": 9,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -121,7 +121,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 32,
+              "rightColumn": 18,
               "dynamicHeight": "FIXED",
               "widgetId": "g3bos95237",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -135,7 +135,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "e2e_student_entryexit_records",
+              "defaultText": "",
               "minDynamicHeight": 4
             },
             {
@@ -143,15 +143,15 @@
               "boxShadow": "none",
               "widgetName": "Button1",
               "onClick": "{{create_table.run(() => showAlert('successfully','info'), () => showAlert('error','error'))}}",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "buttonColor": "rgb(33, 150, 243)",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
                 "click",
                 "submit"
               ],
-              "topRow": 49,
-              "bottomRow": 53,
+              "topRow": 43,
+              "bottomRow": 47,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -162,20 +162,17 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 6,
+              "leftColumn": 51,
               "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
                 {
                   "key": "borderRadius"
                 }
               ],
-              "text": "Submit",
+              "text": "Save",
               "isDisabled": false,
               "key": "lgwr6q9usx",
               "isDeprecated": false,
-              "rightColumn": 22,
+              "rightColumn": 56,
               "isDefaultClickDisabled": true,
               "widgetId": "3mu2oj2u6l",
               "isVisible": true,
