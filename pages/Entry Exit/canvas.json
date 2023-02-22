@@ -42,7 +42,7 @@
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": true,
+              "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
@@ -130,8 +130,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 51,
-                      "bottomRow": 56,
+                      "topRow": 52,
+                      "bottomRow": 57,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -140,7 +140,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 20.0625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 9,
+                      "leftColumn": 18,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -157,7 +157,7 @@
                       "text": "Hover your QR code",
                       "key": "ggbflojms3",
                       "isDeprecated": false,
-                      "rightColumn": 55,
+                      "rightColumn": 64,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "6hyk2pvyio",
@@ -168,10 +168,10 @@
                       "parentId": "l4sx9jk18v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 51,
+                      "originalTopRow": 52,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 56,
+                      "originalBottomRow": 57,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
