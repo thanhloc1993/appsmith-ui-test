@@ -311,7 +311,7 @@
                   "label": "Entry Time",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"entry_at\"] ? moment(currentRow[\"entry_at\"]).format('HH-mm') : \"\"))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"entry_at\"] ? moment.tz(currentRow[\"entry_at\"], '+7').format(\"HH:mm\") : \"\"))}}",
                   "translationJp": "",
                   "validation": {}
                 },
@@ -338,7 +338,7 @@
                   "label": "Exit Time",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"exit_at\"] ? moment(currentRow[\"exit_at\"]).format('HH-mm') : \"\"))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"exit_at\"] ? moment.tz(currentRow[\"exit_at\"], '+7').format(\"HH:mm\") : \"\"))}}",
                   "translationJp": "",
                   "validation": {}
                 },
