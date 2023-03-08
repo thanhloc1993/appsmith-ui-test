@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "submitFuc",
-    "fullyQualifiedName": "JSObject1.submitFuc",
+    "name": "callWidget",
+    "fullyQualifiedName": "Architecture_JS1.callWidget",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,19 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "list-course",
-    "collectionId": "list-course_JSObject1",
+    "pageId": "Page1",
+    "collectionId": "Page1_Architecture_JS1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  return;\n}",
+      "body": "() => {\n  return Arch_table_query.pageNo;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  return;\n}"
+      "() => {\n  return Arch_table_query.pageNo;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course_JSObject1.submitFuc",
+  "id": "Page1_Architecture_JS1.callWidget",
   "deleted": false,
-  "gitSyncId": "635a42eddc1d1b603e048648_635a50b7dc1d1b603e04868b"
+  "gitSyncId": "6360798db3ce396b06d52e39_63b67ae32b06863417fc6880"
 }

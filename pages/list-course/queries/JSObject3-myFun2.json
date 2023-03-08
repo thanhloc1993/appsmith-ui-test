@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "submitFuc",
-    "fullyQualifiedName": "JSObject1.submitFuc",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject3.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "list-course",
-    "collectionId": "list-course_JSObject1",
+    "collectionId": "list-course_JSObject3",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  return;\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  return;\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course_JSObject1.submitFuc",
+  "id": "list-course_JSObject3.myFun2",
   "deleted": false,
-  "gitSyncId": "635a42eddc1d1b603e048648_635a50b7dc1d1b603e04868b"
+  "gitSyncId": "6360798db3ce396b06d52e39_639ac62195444d2e49147b9a"
 }

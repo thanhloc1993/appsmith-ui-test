@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "submitFuc",
-    "fullyQualifiedName": "JSObject1.submitFuc",
+    "name": "callQuery",
+    "fullyQualifiedName": "Architecture_JS1.callQuery",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "list-course",
-    "collectionId": "list-course_JSObject1",
+    "pageId": "Page1",
+    "collectionId": "Page1_Architecture_JS1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  return;\n}",
+      "body": "async () => {\n  const courseTypes = await Arch_Get_CourseTypes.run({\n    name: \"Regular\"\n  });\n  console.log(courseTypes);\n  return courseTypes.data;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  return;\n}"
+      "async () => {\n  const courseTypes = await Arch_Get_CourseTypes.run({\n    name: \"Regular\"\n  });\n  console.log(courseTypes);\n  return courseTypes.data;\n}"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "list-course_JSObject1.submitFuc",
+  "id": "Page1_Architecture_JS1.callQuery",
   "deleted": false,
-  "gitSyncId": "635a42eddc1d1b603e048648_635a50b7dc1d1b603e04868b"
+  "gitSyncId": "6360798db3ce396b06d52e39_63b6750b2b06863417fc687b"
 }

@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "Architecture_JS1",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetLessons: () => {\n\t\treturn [\"lesson 1\", \"lesson 2\"]\n\t},\n\tcallWidget: () => {\n\t\t\treturn Arch_table_query.pageNo;\n\t},\n\tcallQuery: async () => {\n\t\t//use async-await or promises\n\t\tconst courseTypes = await Arch_Get_CourseTypes.run(\n\t\t\t{\n\t\t\t\tname: \"Regular\"\n\t\t\t}\n\t\t)\n\t\tconsole.log(courseTypes);\n\t\treturn courseTypes.data;\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Page1_Architecture_JS1",
+  "deleted": false,
+  "gitSyncId": "6360798db3ce396b06d52e39_63b6750b2b06863417fc687d"
+}

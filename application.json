@@ -15,6 +15,10 @@
     {
       "id": "Page2",
       "isDefault": false
+    },
+    {
+      "id": "Test new widgets",
+      "isDefault": false
     }
   ],
   "viewMode": false,
