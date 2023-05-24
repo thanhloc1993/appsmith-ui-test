@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "name": "scanQrcode",
+    "fullyQualifiedName": "Js_entry_exit.scanQrcode",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,11 @@
       "userPermissions": []
     },
     "pageId": "Entry Exit",
-    "collectionId": "Entry Exit_JSObject1",
+    "collectionId": "Entry Exit_Js_entry_exit",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  console.log(\"aaaa\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,15 +33,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "async () => {\n  console.log(\"aaaa\");\n}"
-    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Entry Exit_JSObject1.myFun2",
+  "id": "Entry Exit_Js_entry_exit.scanQrcode",
   "deleted": false,
-  "gitSyncId": "63bfcc1f0a83662b10b21f8c_63bfe4220a83662b10b21fbc"
+  "gitSyncId": "63bfcc1f0a83662b10b21f8c_63bfd2330a83662b10b21f99"
 }
