@@ -7,6 +7,14 @@
     {
       "id": "Entry Exit",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -14,6 +22,8 @@
   "unreadCommentThreads": 0,
   "color": "#F4FFDE",
   "icon": "arrow-down",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,

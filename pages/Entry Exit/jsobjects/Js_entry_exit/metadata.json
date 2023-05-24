@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Js_entry_exit",
+    "pageId": "Entry Exit",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Entry Exit_Js_entry_exit",
+  "deleted": false,
+  "gitSyncId": "63bfcc1f0a83662b10b21f8c_63bfd2330a83662b10b21f9d"
+}
