@@ -1,1 +1,0 @@
-SELECT * FROM public."e2e_student_entryexit_records" where student_id = "{{this.params.student_id}}" order by created_at desc LIMIT 1;

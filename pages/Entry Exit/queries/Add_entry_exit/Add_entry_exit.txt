@@ -1,2 +1,0 @@
-INSERT INTO public."e2e_student_entryexit_records" ("entryexit_id", "student_id", "entry_at", "exit_at", "created_at", "updated_at")
-  VALUES ({{this.params.entryexit_id}}, {{this.params.student_id}}, {{this.params.entry_at}}, {{this.params.exit_at}} , now(), now());

@@ -1,1 +1,0 @@
-SELECT * FROM public."e2e_student_qr" where student_id = "{{this.params.student_id}}" LIMIT 1;
