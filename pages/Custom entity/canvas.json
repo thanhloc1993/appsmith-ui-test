@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1110,
+          "bottomRow": 1160,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -93,8 +93,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 4,
-              "bottomRow": 11,
+              "topRow": 10,
+              "bottomRow": 17,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -104,7 +104,7 @@
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
               "resetOnSubmit": true,
-              "leftColumn": 6,
+              "leftColumn": 15,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -121,7 +121,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 32,
+              "rightColumn": 41,
               "dynamicHeight": "FIXED",
               "widgetId": "g3bos95237",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -460,7 +460,7 @@
                 }
               ],
               "displayName": "JSON Form",
-              "bottomRow": 111,
+              "bottomRow": 116,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Form",
