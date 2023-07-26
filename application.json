@@ -26,8 +26,11 @@
   "unreadCommentThreads": 0,
   "color": "#F4FFDE",
   "icon": "arrow-down",
-  "unpublishedCustomJSLibs": [],
-  "publishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "Papa_https://unpkg.com/papaparse@5.3.2/papaparse.min.js"
+    }
+  ],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
