@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 840,
+          "bottomRow": 420,
           "containerStyle": "none",
           "snapRows": 77,
           "parentRowSpace": 1,
@@ -27,17 +27,17 @@
           "children": [
             {
               "boxShadow": "none",
-              "mobileBottomRow": 31,
+              "mobileBottomRow": 42,
               "widgetName": "ButtonGroup1",
               "isCanvas": false,
               "displayName": "Button Group",
-              "iconSVG": "/static/media/icon.7c22979bacc83c8d84aedf56ea6c2022.svg",
+              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
               "searchTags": [
                 "click",
                 "submit"
               ],
-              "topRow": 23,
-              "bottomRow": 27,
+              "topRow": 38,
+              "bottomRow": 42,
               "parentRowSpace": 10,
               "groupButtons": {
                 "groupButton1": {
@@ -117,10 +117,10 @@
               },
               "type": "BUTTON_GROUP_WIDGET",
               "hideCard": false,
-              "mobileRightColumn": 25,
+              "mobileRightColumn": 15,
               "animateLoading": true,
-              "parentColumnSpace": 7.90625,
-              "leftColumn": 1,
+              "parentColumnSpace": 20.03125,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -135,18 +135,18 @@
                   "key": "groupButtons.groupButton3.buttonColor"
                 }
               ],
-              "key": "d1d57zlp14",
+              "key": "z9ugpz5b79",
               "orientation": "horizontal",
               "isDeprecated": false,
-              "rightColumn": 25,
-              "widgetId": "x6ycyqhjbg",
+              "rightColumn": 15,
+              "widgetId": "gz1vb0lfbu",
               "minWidth": 450,
               "isVisible": true,
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "mobileTopRow": 27,
+              "mobileTopRow": 38,
               "responsiveBehavior": "fill",
               "childStylesheet": {
                 "button": {
@@ -154,277 +154,8 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "mobileLeftColumn": 1,
+              "mobileLeftColumn": 0,
               "buttonVariant": "PRIMARY"
-            },
-            {
-              "boxShadow": "none",
-              "iconSVG": "/static/media/icon.1f9fd5e7467473d109bf25adc924d96b.svg",
-              "topRow": 43,
-              "labelWidth": 5,
-              "type": "PHONE_INPUT_WIDGET",
-              "animateLoading": true,
-              "resetOnSubmit": true,
-              "leftColumn": 15,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "labelStyle": "",
-              "isDisabled": false,
-              "isRequired": false,
-              "dynamicHeight": "FIXED",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "mobileBottomRow": 45,
-              "widgetName": "PhoneInput1",
-              "displayName": "Phone Input",
-              "searchTags": [
-                "call"
-              ],
-              "bottomRow": 50,
-              "parentRowSpace": 10,
-              "defaultDialCode": "+1",
-              "autoFocus": false,
-              "hideCard": false,
-              "mobileRightColumn": 49,
-              "parentColumnSpace": 5.109375,
-              "labelPosition": "Top",
-              "key": "vairgq0uij",
-              "labelTextSize": "0.875rem",
-              "isDeprecated": false,
-              "rightColumn": 35,
-              "widgetId": "ofcy4u3c3o",
-              "allowDialCodeChange": false,
-              "minWidth": 450,
-              "label": "Label",
-              "parentId": "0",
-              "labelAlignment": "left",
-              "allowFormatting": true,
-              "renderMode": "CANVAS",
-              "mobileTopRow": 38,
-              "responsiveBehavior": "fill",
-              "mobileLeftColumn": 29,
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "mobileBottomRow": 60,
-              "widgetName": "RadioGroup1",
-              "displayName": "Radio Group",
-              "iconSVG": "/static/media/icon.d0171e5090e38b83793ce771c861be9e.svg",
-              "searchTags": [
-                "choice"
-              ],
-              "topRow": 54,
-              "bottomRow": 61,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "type": "RADIO_GROUP_WIDGET",
-              "hideCard": false,
-              "mobileRightColumn": 35,
-              "defaultOptionValue": "Y",
-              "animateLoading": true,
-              "parentColumnSpace": 5.109375,
-              "leftColumn": 15,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "options": [
-                {
-                  "label": "Yes",
-                  "value": "Y"
-                },
-                {
-                  "label": "No",
-                  "value": "N"
-                }
-              ],
-              "isDisabled": false,
-              "key": "01hyoxbxv1",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 35,
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "gk3s0yaqxb",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "label": "Label",
-              "version": 1,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "mobileTopRow": 54,
-              "originalTopRow": 54,
-              "mobileLeftColumn": 15,
-              "maxDynamicHeight": 9000,
-              "originalBottomRow": 64,
-              "isInline": true,
-              "alignment": "left",
-              "minDynamicHeight": 4
-            },
-            {
-              "mobileBottomRow": 76,
-              "widgetName": "RangeSlider1",
-              "displayName": "Range Slider",
-              "iconSVG": "/static/media/icon.8216245f04c391d4ae315397e9194dd4.svg",
-              "defaultStartValue": 10,
-              "tooltipAlwaysOn": false,
-              "labelText": "Percentage",
-              "topRow": 65,
-              "bottomRow": 73,
-              "parentRowSpace": 10,
-              "labelWidth": 8,
-              "type": "RANGE_SLIDER_WIDGET",
-              "hideCard": false,
-              "mobileRightColumn": 42,
-              "animateLoading": true,
-              "min": 0,
-              "parentColumnSpace": 4.46875,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "shouldTruncate": false,
-              "isDisabled": false,
-              "defaultEndValue": 100,
-              "key": "d0tzont6xz",
-              "labelTextSize": "0.875rem",
-              "isDeprecated": false,
-              "rightColumn": 42,
-              "max": 100,
-              "widgetId": "cedfveeefe",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "marks": [
-                {
-                  "value": 25,
-                  "label": "25%"
-                },
-                {
-                  "value": 50,
-                  "label": "50%"
-                },
-                {
-                  "value": 75,
-                  "label": "75%"
-                }
-              ],
-              "sliderSize": "m",
-              "shouldScroll": false,
-              "version": 1,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "mobileTopRow": 68,
-              "responsiveBehavior": "fill",
-              "originalTopRow": 68,
-              "mobileLeftColumn": 2,
-              "originalBottomRow": 76,
-              "step": 1,
-              "showMarksLabel": true,
-              "minRange": 5
-            },
-            {
-              "boxShadow": "none",
-              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "Label",
-              "topRow": 77,
-              "labelWidth": 5,
-              "type": "SINGLE_SELECT_TREE_WIDGET",
-              "defaultOptionValue": "BLUE",
-              "animateLoading": true,
-              "leftColumn": 17,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "options": [
-                {
-                  "label": "Blue",
-                  "value": "BLUE",
-                  "children": [
-                    {
-                      "label": "Dark Blue",
-                      "value": "DARK BLUE"
-                    },
-                    {
-                      "label": "Light Blue",
-                      "value": "LIGHT BLUE"
-                    }
-                  ]
-                },
-                {
-                  "label": "Green",
-                  "value": "GREEN"
-                },
-                {
-                  "label": "Red",
-                  "value": "RED"
-                }
-              ],
-              "placeholderText": "Select option",
-              "isDisabled": false,
-              "isRequired": false,
-              "dynamicHeight": "FIXED",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 1,
-              "expandAll": false,
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 87,
-              "mobileBottomRow": 87,
-              "widgetName": "TreeSelect1",
-              "displayName": "TreeSelect",
-              "searchTags": [
-                "dropdown"
-              ],
-              "bottomRow": 84,
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "mobileRightColumn": 37,
-              "parentColumnSpace": 4.46875,
-              "labelPosition": "Top",
-              "key": "wgeje7qo22",
-              "labelTextSize": "0.875rem",
-              "isDeprecated": false,
-              "rightColumn": 37,
-              "widgetId": "j7q1d180bc",
-              "minWidth": 450,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "mobileTopRow": 80,
-              "responsiveBehavior": "fill",
-              "originalTopRow": 80,
-              "mobileLeftColumn": 17,
-              "maxDynamicHeight": 9000,
-              "allowClear": false,
-              "minDynamicHeight": 4
             }
           ]
         },
