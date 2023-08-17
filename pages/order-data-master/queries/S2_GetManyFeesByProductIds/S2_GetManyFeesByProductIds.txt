@@ -1,0 +1,13 @@
+{
+  "query": '
+    query Payment_GetManyFeesByProductIds($productIds: [String!]) {
+        fee(where: { fee_id: { _in: $productIds } }, order_by: { fee_id: asc }) {
+            fee_id
+            fee_type
+        }
+    }
+',
+  "variables": {
+		"productIds": {{[search_product_id.text]}},
+  }
+}

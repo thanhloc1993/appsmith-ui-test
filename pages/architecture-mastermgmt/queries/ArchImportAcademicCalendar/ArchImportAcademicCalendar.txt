@@ -1,0 +1,8 @@
+{{ 
+{
+	"payload": this.params.payload,
+	"location_id": SelectLocationForAcademic.selectedOptionValue,
+	"academic_year_id": SelectYear.selectedOptionValue,
+	"academic_closed_days": AcademicHelper.academicClosedDay,
+}
+}}

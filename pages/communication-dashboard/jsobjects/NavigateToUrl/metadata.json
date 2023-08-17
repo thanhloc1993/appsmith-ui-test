@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "NavigateToUrl",
+    "pageId": "communication-dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "communication-dashboard_NavigateToUrl",
+  "deleted": false,
+  "gitSyncId": "6459e7d9eaffda695ca93ff1_645cb677339dca382659d77e"
+}

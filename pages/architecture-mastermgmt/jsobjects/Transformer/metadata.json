@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Transformer",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Transformer",
+  "deleted": false,
+  "gitSyncId": "6447e4f71fbe8e3f7857334e_6447e7651fbe8e3f785733fe"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "MenuSelecter",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_MenuSelecter",
+  "deleted": false,
+  "gitSyncId": "646f04941112fd7e648d7473_646f05811112fd7e648d754a"
+}

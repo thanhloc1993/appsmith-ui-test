@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Validater",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Validater",
+  "deleted": false,
+  "gitSyncId": "640be7ac37e2ed70c8a31ad8_6417fe7df3e73136f105bcd9"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Exporter",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Exporter",
+  "deleted": false,
+  "gitSyncId": "640be7ac37e2ed70c8a31ad8_642e7c1d6ab2924dd6a8f0bb"
+}

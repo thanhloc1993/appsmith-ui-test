@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Import",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "allowListError",
+        "value": "[\"resources.masters.message.mustImportAllExistData\", \"resources.masters.message.canNotUpdateLowestType\"]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Import",
+  "deleted": false,
+  "gitSyncId": "640be7ac37e2ed70c8a31ad8_6413e43737e2ed70c8a31de0"
+}

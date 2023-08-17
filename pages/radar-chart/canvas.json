@@ -1,0 +1,328 @@
+{
+  "unpublishedPage": {
+    "name": "radar-chart",
+    "slug": "radar-chart",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1660,
+          "containerStyle": "none",
+          "snapRows": 78,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 78,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 0,
+              "bottomRow": 56,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "1wigxtn77k": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"radar\",\n  \"dataSource\": {\n  \"chart\": {\n    \"caption\": \"Student Skill\",\n    \"subcaption\": \"Scale: 1 (low) to 5 (high)\",\n    \"theme\": \"fusion\",\n    \"showlegend\": \"0\",\n    \"showdivlinevalues\": \"0\",\n    \"showlimits\": \"0\",\n    \"showvalues\": \"1\",\n    \"plotfillalpha\": \"40\",\n    \"plottooltext\": \"Harry's <b>$label</b> skill is rated as <b>$value</b>\"\n  },\n  \"categories\": [\n    {\n      \"category\": [\n        {\n          \"label\": \"Communication\"\n        },\n        {\n          \"label\": \"Listen\"\n        },\n        {\n          \"label\": \"Problem Solving\"\n        },\n        {\n          \"label\": \"Read\"\n        },\n        {\n          \"label\": \"Football\"\n        },\n        {\n          \"label\": \"Knowledge\"\n        }\n      ]\n    }\n  ],\n  \"dataset\": [\n    {\n      \"seriesname\": \"User Ratings\",\n      \"data\": [\n        {\n          \"value\": \"3\"\n        },\n        {\n          \"value\": \"3\"\n        },\n        {\n          \"value\": \"4\"\n        },\n        {\n          \"value\": \"3\"\n        },\n        {\n          \"value\": \"2\"\n        },\n        {\n          \"value\": \"4\"\n        }\n      ]\n    }\n  ]\n}\n}",
+              "key": "1l315r0l3b",
+              "isDeprecated": false,
+              "rightColumn": 32,
+              "widgetId": "4rgfzlk5u2",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "yAxisName": "Revenue($)",
+              "chartName": "Sutdent Report",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Chart1Copy",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 0,
+              "bottomRow": 56,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "1wigxtn77k": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 33,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"radar\",\n  \"dataSource\":{\n  \"chart\": {\n    \"caption\": \"Temperature in Viet Nam: Low & High\",\n    \"subcaption\": \"For 2017\",\n    \"theme\": \"gammel\",\n    \"numbersuffix\": \"°F\",\n    \"plotfillalpha\": \"40\"\n  },\n  \"categories\": [\n    {\n      \"category\": [\n        {\n          \"label\": \"Jan\"\n        },\n        {\n          \"label\": \"Feb\"\n        },\n        {\n          \"label\": \"Mar\"\n        },\n        {\n          \"label\": \"Apr\"\n        },\n        {\n          \"label\": \"May\"\n        },\n        {\n          \"label\": \"Jun\"\n        },\n        {\n          \"label\": \"Jul\"\n        },\n        {\n          \"label\": \"Aug\"\n        },\n        {\n          \"label\": \"Sept\"\n        },\n        {\n          \"label\": \"Oct\"\n        },\n        {\n          \"label\": \"Nov\"\n        },\n        {\n          \"label\": \"Dec\"\n        }\n      ]\n    }\n  ],\n  \"dataset\": [\n    {\n      \"series-name\": \"Avg. High\",\n      \"plottooltext\": \"<b>$label</b> maximum temp is <b>$datavalue</b>\",\n      \"data\": [\n        {\n          \"value\": \"39\"\n        },\n        {\n          \"value\": \"42\"\n        },\n        {\n          \"value\": \"50\"\n        },\n        {\n          \"value\": \"60\"\n        },\n        {\n          \"value\": \"71\"\n        },\n        {\n          \"value\": \"79\"\n        },\n        {\n          \"value\": \"85\"\n        },\n        {\n          \"value\": \"83\"\n        },\n        {\n          \"value\": \"76\"\n        },\n        {\n          \"value\": \"65\"\n        },\n        {\n          \"value\": \"54\"\n        },\n        {\n          \"value\": \"79\"\n        },\n        {\n          \"value\": \"79\"\n        }\n      ]\n    },\n    {\n      \"series-name\": \"Avg. Low\",\n      \"plottooltext\": \"<b>$label</b> minimum temp is <b>$datavalue</b>\",\n      \"data\": [\n        {\n          \"value\": \"26\"\n        },\n        {\n          \"value\": \"29\"\n        },\n        {\n          \"value\": \"35\"\n        },\n        {\n          \"value\": \"44\"\n        },\n        {\n          \"value\": \"55\"\n        },\n        {\n          \"value\": \"64\"\n        },\n        {\n          \"value\": \"70\"\n        },\n        {\n          \"value\": \"69\"\n        },\n        {\n          \"value\": \"61\"\n        },\n        {\n          \"value\": \"50\"\n        },\n        {\n          \"value\": \"41\"\n        },\n        {\n          \"value\": \"32\"\n        }\n      ]\n    }\n  ]\n}}",
+              "key": "1l315r0l3b",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "a51sq84dwf",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Chart1CopyCopy",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 58,
+              "bottomRow": 129,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "1wigxtn77k": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"dragnode\",\n  \"dataSource\": {\n  \"chart\": {\n    \"caption\": \"Manabie Location\",\n    \"theme\": \"fusion\",\n    \"viewmode\": \"1\",\n    \"showrestorebtn\": \"0\",\n    \"valuefontcolor\": \"#FFFFFF\",\n    \"yaxismaxvalue\": \"1000\",\n    \"yaxisminvalue\": \"0\",\n    \"divlinealpha\": \"0\"\n  },\n  \"dataset\": [\n    {\n      \"data\": [\n        {\n          \"id\": \"01\",\n          \"label\": \"Manabie Hub\",\n          \"x\": \"50\",\n          \"y\": \"900\",\n          \"shape\": \"rectangle\",\n          \"width\": \"90\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"02\",\n          \"label\": \"Brand 1\",\n          \"x\": \"20\",\n          \"y\": \"500\",\n          \"shape\": \"rectangle\",\n          \"width\": \"80\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"02.1\",\n          \"label\": \"Center C1\",\n          \"x\": \"2\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"02.2\",\n          \"label\": \"Center C2\",\n          \"x\": \"12\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"02.3\",\n          \"label\": \"Center C3\",\n          \"x\": \"22\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"03\",\n          \"label\": \"Brand X\",\n          \"x\": \"50\",\n          \"y\": \"500\",\n          \"shape\": \"rectangle\",\n          \"width\": \"80\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"03.1\",\n          \"label\": \"Center X1\",\n          \"x\": \"35\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"03.2\",\n          \"label\": \"Center X2\",\n          \"x\": \"45\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"03.3\",\n          \"label\": \"Center X3\",\n          \"x\": \"55\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"03.5\",\n          \"label\": \"Center X4\",\n          \"x\": \"65\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"04\",\n          \"label\": \"Brand Kid\",\n          \"x\": \"80\",\n          \"y\": \"500\",\n          \"shape\": \"rectangle\",\n          \"width\": \"80\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"04.1\",\n          \"label\": \"Kid 1\",\n          \"x\": \"80\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        },\n        {\n          \"id\": \"04.2\",\n          \"label\": \"Kid 2\",\n          \"x\": \"90\",\n          \"y\": \"100\",\n          \"shape\": \"rectangle\",\n          \"width\": \"60\",\n          \"height\": \"40\"\n        }\n      ]\n    }\n  ],\n  \"connectors\": [\n    {\n      \"stdthickness\": \"1.5\",\n      \"connector\": [\n        {\n          \"from\": \"01\",\n          \"to\": \"03\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"01\",\n          \"to\": \"04\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"01\",\n          \"to\": \"02\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"01.02\",\n          \"to\": \"04\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"01.01\",\n          \"to\": \"02\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"02\",\n          \"to\": \"02.1\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"02\",\n          \"to\": \"02.2\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"02\",\n          \"to\": \"02.3\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"03\",\n          \"to\": \"03.1\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"03\",\n          \"to\": \"03.2\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"03\",\n          \"to\": \"03.3\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"03\",\n          \"to\": \"03.4\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"03\",\n          \"to\": \"03.5\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"03\",\n          \"to\": \"03.6\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"04\",\n          \"to\": \"04.1\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        },\n        {\n          \"from\": \"04\",\n          \"to\": \"04.2\",\n          \"arrowatstart\": \"0\",\n          \"arrowatend\": \"1\",\n          \"alpha\": \"100\"\n        }\n      ]\n    }\n  ]\n}\n}",
+              "key": "1l315r0l3b",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "7gdovyhbjc",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Chart2",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 134,
+              "bottomRow": 166,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "4co167ratf": {
+                  "seriesName": "Sales",
+                  "data": "[\n  {\n    \"x\": \"Product1\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Product2\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Product3\",\n    \"y\": 32000\n  }\n]"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": [\n      {\n        \"label\": \"Product1\",\n        \"value\": 20000\n      },\n      {\n        \"label\": \"Product2\",\n        \"value\": 22000\n      },\n      {\n        \"label\": \"Product3\",\n        \"value\": 32000\n      }\n    ],\n    \"chart\": {\n      \"caption\": \"Sales Report\",\n      \"xAxisName\": \"Product Line\",\n      \"yAxisName\": \"Revenue($)\",\n      \"theme\": \"fusion\",\n      \"alignCaptionWithCanvas\": 1,\n      \"captionFontSize\": \"24\",\n      \"captionAlignment\": \"center\",\n      \"captionPadding\": \"20\",\n      \"captionFontColor\": \"#231F20\",\n      \"legendIconSides\": \"4\",\n      \"legendIconBgAlpha\": \"100\",\n      \"legendIconAlpha\": \"100\",\n      \"legendPosition\": \"top\",\n      \"canvasPadding\": \"0\",\n      \"chartLeftMargin\": \"20\",\n      \"chartTopMargin\": \"10\",\n      \"chartRightMargin\": \"40\",\n      \"chartBottomMargin\": \"10\",\n      \"xAxisNameFontSize\": \"14\",\n      \"labelFontSize\": \"12\",\n      \"labelFontColor\": \"#716e6e\",\n      \"xAxisNameFontColor\": \"#716e6e\",\n      \"yAxisNameFontSize\": \"14\",\n      \"yAxisValueFontSize\": \"12\",\n      \"yAxisValueFontColor\": \"#716e6e\",\n      \"yAxisNameFontColor\": \"#716e6e\"\n    }\n  }\n}",
+              "key": "2zyi2ka0nu",
+              "isDeprecated": false,
+              "rightColumn": 25,
+              "widgetId": "qbtbo5xbu1",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "chartType": "BAR_CHART"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "radar-chart",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "640be7ac37e2ed70c8a31ad8_640f35f837e2ed70c8a31b92"
+}

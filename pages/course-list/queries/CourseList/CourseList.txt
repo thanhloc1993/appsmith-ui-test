@@ -1,0 +1,26 @@
+{
+  "query": '
+    query Architecture_CoursesList($name: String, $course_ids: [String!], $course_type_id: String, $limit: Int = 10, $offset: Int = 0) {
+      courses(limit: $limit, offset: $offset, order_by: {created_at: desc, display_order: asc, name: asc, course_id: asc}, where: {name: {_ilike: $name}, course_id: {_in: $course_ids}, course_type_id: {_eq: $course_type_id}}) {
+        course_id
+        name
+        teaching_method
+        icon
+        course_types {
+          course_type_id
+          name
+        }
+      }
+      courses_aggregate(where: {name: {_ilike: $name}, course_id: {_in: $course_ids}, course_type_id: {_eq: $course_type_id}}) {
+        aggregate {
+          count
+        }
+      }
+    }
+',
+  "variables": {
+    "limit": 10,
+    "offset": {{CourseTable.pageOffset}},
+		"name": {{'%' +search_course.text+ '%'}}
+  }
+}

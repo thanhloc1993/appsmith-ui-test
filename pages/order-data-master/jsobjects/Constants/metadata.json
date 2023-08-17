@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Constants",
+    "pageId": "order-data-master",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "OrderManagementProductPrefix",
+        "value": "\"Order\""
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "order-data-master_Constants",
+  "deleted": false,
+  "gitSyncId": "6413d91737e2ed70c8a31d74_641c119f43884d431f0ef736"
+}

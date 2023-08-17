@@ -1,0 +1,5 @@
+{{ 
+{
+	"location_ids": this.params.location_ids
+}
+}}

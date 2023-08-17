@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Configure",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "overrideCourseRule",
+        "value": "[{\n  \"name\": \"course_id\",\n  \"rules\": \"\"\n}, {\n  \"name\": \"course_name\",\n  \"rules\": \"required|max:50\"\n}, {\n  \"name\": \"course_type_id\",\n  \"rules\": \"\"\n}, {\n  \"name\": \"course_partner_id\",\n  \"rules\": \"\"\n}, {\n  \"name\": \"teaching_method\",\n  \"rules\": \"includes:Group,Individual,null\"\n}, {\n  \"name\": \"remarks\",\n  \"rules\": \"\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Configure",
+  "deleted": false,
+  "gitSyncId": "640be7ac37e2ed70c8a31ad8_64193467f3e73136f105bd38"
+}

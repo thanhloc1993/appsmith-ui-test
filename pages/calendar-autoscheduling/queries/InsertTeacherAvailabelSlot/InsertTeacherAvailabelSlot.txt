@@ -1,0 +1,12 @@
+{
+	query: '
+		mutation Calendar_InsertTeacherAvailabelSlotMaster($data: [teacher_available_slot_master_insert_input!]!) {
+			insert_teacher_available_slot_master(objects: $data) {
+				affected_rows
+			}
+		}
+	',
+  variables: {
+		"data":  {{this.params.data}}
+	}
+}

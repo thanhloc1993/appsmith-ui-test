@@ -1,0 +1,50 @@
+{
+	"query": '
+		query Lesson_LessonDetailByLessonId($lesson_id: String!) {
+            lessons(where: {lesson_id: {_eq: $lesson_id}}) {
+              is_locked
+              lesson_id
+              center_id
+              course {
+                course_id
+                name
+              }
+              class_id
+              lesson_group_id
+              teaching_medium
+              teaching_method
+              lesson_type
+              scheduling_status
+              scheduler_id
+              start_time
+              end_time
+              lessons_teachers {
+                teacher_id
+              }
+              lesson_members {
+                attendance_remark
+                attendance_status
+                attendance_notice
+                attendance_reason
+                attendance_note
+                course {
+                  course_id
+                  name
+                  subject
+                }
+                user {
+                  user_id
+                  name
+                  email
+                  student {
+                    current_grade
+                  }
+                }
+              }
+            }
+          }
+	',
+	variables: {
+		"lesson_id": {{this.params.lesson_id}},
+	}
+}

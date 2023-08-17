@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "calendar-autoscheduling",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "calendar-autoscheduling_Utils",
+  "deleted": false,
+  "gitSyncId": "64780995d15f8910831d5761_647835096f85f751a134c984"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_Lesson_Detail",
+    "pageId": "architecture-lesson-detail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-lesson-detail_JS_Lesson_Detail",
+  "deleted": false,
+  "gitSyncId": "63a978bac5282d4e403d3ccf_63a979dec5282d4e403d3d08"
+}

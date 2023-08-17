@@ -1,0 +1,25 @@
+{
+    "paging":{
+        "limit":10,
+        "offset_string":""
+    },
+    "current_time":{{moment().format()}},
+    "keyword":"",
+    "lesson_time":0,
+    "filter":{
+        "teacher_ids":{{appsmith.store.future_filter.teacher || []}},
+        "student_ids":{{appsmith.store.future_filter.student || []}},
+        "course_ids":{{appsmith.store.future_filter.course || []}},
+        "from_date":{{appsmith.store.future_filter.from_date ? moment().format(appsmith.store.future_filter.from_date) : undefined}},
+        "to_date":{{appsmith.store.future_filter.to_date ? moment().format(appsmith.store.future_filter.to_date) : undefined}},
+        "time_zone":"Asia/Saigon",
+        "date_of_weeks":{{appsmith.store.future_filter.day_of_week || []}},
+        "from_time":{{appsmith.store.future_filter.from_time || undefined}},
+        "to_time":{{appsmith.store.future_filter.to_time || undefined}},
+        "scheduling_status":{{appsmith.store.future_filter.lesson_status || []}},
+        "class_ids":{{appsmith.store.future_filter.class || []}},
+        "grades_v2":{{appsmith.store.future_filter.grade || []}},
+        "course_type_ids":{{appsmith.store.future_filter.course_type || []}},
+				"location_ids":{{appsmith.store.future_filter.location || []}}
+    }
+}

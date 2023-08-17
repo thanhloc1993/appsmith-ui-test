@@ -1,0 +1,12 @@
+{
+	query: '
+		mutation Calendar_InsertCenterOpeningSlot($data: [center_opening_slot_insert_input!]!) {
+			insert_center_opening_slot(objects: $data) {
+				affected_rows
+			}
+		}
+	',
+  variables: {
+		"data":  {{this.params.data}}
+	}
+}

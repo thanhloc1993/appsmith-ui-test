@@ -1,0 +1,12 @@
+{
+	"id_req": 012032103, 
+	"name": "timetable_tagajo_summer_2022",
+	"list_hard_constraints": [1,1,1,1,1,1,1,1,1,0],
+	"weight_soft_constraints": [0,0,0,0,1],
+	"student_avail_time_id": "student_20230606_0",
+	"teacher_avail_time_id": "teacher_20230606_0",
+	"time_slot_master_id": "timeslot_20230606_0",
+	"center_opening_slot": "center_20230606_0",
+	"teacher_course": "teacher_course_20230606_0",
+	"applied_slot": "applied_slot_20230606_0"
+}

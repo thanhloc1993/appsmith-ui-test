@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Helper",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Helper",
+  "deleted": false,
+  "gitSyncId": "6447e4f71fbe8e3f7857334e_6447e7821fbe8e3f78573402"
+}

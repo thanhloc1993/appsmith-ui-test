@@ -1,0 +1,12 @@
+{
+	"query":'
+		 query LocationsListByNameLowestLevel($limit: Int = 10, $offset: Int = 0, $name: String = "") {
+        get_locations_lowest_level(
+            args: { location_limit: $limit, location_offset: $offset, location_search_name: 		$name }
+        ) {
+            name
+            location_id
+        }
+    }
+',
+}

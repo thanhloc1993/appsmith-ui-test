@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Snackbar",
+    "pageId": "scheduling-setup-constraint",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "scheduling-setup-constraint_Snackbar",
+  "deleted": false,
+  "gitSyncId": "647d7d43ddfff71404331c97_649aa9e354b984022efd9c73"
+}

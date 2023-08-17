@@ -1,0 +1,12 @@
+{
+	"query":'
+		 query Lesson_GetAllGradesMaster {
+        grade(where: { is_archived: { _eq: false } }, order_by: { sequence: asc }) {
+            grade_id
+            name
+            sequence
+            partner_internal_id
+        }
+    }
+	'
+}

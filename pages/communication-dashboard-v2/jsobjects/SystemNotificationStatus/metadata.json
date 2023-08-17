@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "SystemNotificationStatus",
+    "pageId": "communication-dashboard-v2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "active",
+        "value": "'all'"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "communication-dashboard-v2_SystemNotificationStatus",
+  "deleted": false,
+  "gitSyncId": "64c1e69718b9c06afd5dfafb_64c23468175950737e973a2b"
+}

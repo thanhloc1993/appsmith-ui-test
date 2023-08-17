@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "CONFIG_JS",
+    "pageId": "config-setting",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "config-setting_CONFIG_JS",
+  "deleted": false,
+  "gitSyncId": "63622c59b3ce396b06d52fb8_636c6904b6630319f85fec07"
+}

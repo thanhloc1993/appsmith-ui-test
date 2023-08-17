@@ -1,0 +1,10 @@
+{
+	"query":'
+		 query Lesson_GetAllCourseTypes {
+        course_type {
+            course_type_id
+            name
+        }
+    }
+	'
+}

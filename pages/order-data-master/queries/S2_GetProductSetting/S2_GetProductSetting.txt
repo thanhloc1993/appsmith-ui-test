@@ -1,0 +1,16 @@
+{
+  "query": '
+    query Order_GetProductSettingByProductId($productId: String!) {
+			product_setting(where: {product_id: {_eq: $productId}}) {
+				product_id
+				is_enrollment_required
+				is_pausable
+				updated_at
+				created_at
+			}
+		}
+',
+  "variables": {
+		"productId": {{search_product_id.text}},
+  }
+}

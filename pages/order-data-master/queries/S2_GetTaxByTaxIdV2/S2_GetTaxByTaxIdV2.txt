@@ -1,0 +1,16 @@
+{
+  "query": '
+    query Payment_GetTaxByTaxIdV2($tax_id: String!) {
+        tax(where: { tax_id: { _eq: $tax_id } }) {
+            ...TaxAttrs
+        }
+    }
+		fragment TaxAttrs on tax {
+        tax_percentage
+        tax_category
+    }
+',
+  "variables": {
+		"tax_id": {{this.params.tax_id}},
+  }
+}

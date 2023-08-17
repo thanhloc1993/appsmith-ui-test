@@ -1,31 +1,85 @@
 {
   "pages": [
     {
-      "id": "Custom entity",
-      "isDefault": true
+      "id": "config-setting",
+      "isDefault": false
+    },
+    {
+      "id": "common-widget",
+      "isDefault": false
+    },
+    {
+      "id": "architecture-lesson-detail",
+      "isDefault": false
+    },
+    {
+      "id": "architecture-lesson-list",
+      "isDefault": false
+    },
+    {
+      "id": "course-list",
+      "isDefault": false
+    },
+    {
+      "id": "communication-dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "architecture-mastermgmt",
+      "isDefault": false
+    },
+    {
+      "id": "radar-chart",
+      "isDefault": false
     },
     {
       "id": "Page1",
+      "isDefault": true
+    },
+    {
+      "id": "order-data-master",
+      "isDefault": false
+    },
+    {
+      "id": "syllabus-item-bank-bulk-upload",
+      "isDefault": false
+    },
+    {
+      "id": "calendar-academic",
+      "isDefault": false
+    },
+    {
+      "id": "calendar-autoscheduling",
+      "isDefault": false
+    },
+    {
+      "id": "syllabus-image-bank",
+      "isDefault": false
+    },
+    {
+      "id": "scheduling-setup-constraint",
+      "isDefault": false
+    },
+    {
+      "id": "communication-dashboard-v2",
       "isDefault": false
     },
     {
       "id": "Page2",
-      "isDefault": false
-    },
-    {
-      "id": "Page3",
-      "isDefault": false
-    },
-    {
-      "id": "dsadsad",
       "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
-  "color": "#F4FFDE",
-  "icon": "arrow-down",
+  "color": "#C2DAF0",
+  "icon": "saturn",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [
     {
       "uidString": "Papa_https://unpkg.com/papaparse@5.3.2/papaparse.min.js"
@@ -33,6 +87,11 @@
   ],
   "evaluationVersion": 2,
   "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
   "isManualUpdate": false,
   "deleted": false
 }

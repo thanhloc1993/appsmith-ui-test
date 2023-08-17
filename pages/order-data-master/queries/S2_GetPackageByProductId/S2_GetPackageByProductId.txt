@@ -1,0 +1,15 @@
+{
+  "query": '
+    query Payment_GetPackageByProductId($product_id: String!) {
+        package(where: { package_id: { _eq: $product_id } }) {
+            max_slot
+            package_end_date
+            package_start_date
+            package_type
+        }
+    }
+',
+  "variables": {
+		"product_id": {{search_product_id.text}},
+  }
+}

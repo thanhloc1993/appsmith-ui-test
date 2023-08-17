@@ -1,0 +1,2956 @@
+{
+  "unpublishedPage": {
+    "name": "order-data-master",
+    "slug": "order-data-master",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2530,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 77,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "product_title",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 14.652511596679688,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Product",
+              "key": "nnqznrouog",
+              "isDeprecated": false,
+              "rightColumn": 22,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "kqv0h6lqch",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "search_product_id",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "onSubmit": "{{S1_Product.getProduct()}}",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 5,
+              "bottomRow": 9,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onTextChanged"
+                },
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "resetOnSubmit": false,
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "placeholderText": "Enter your keyword",
+              "isDisabled": false,
+              "key": "rhder2yh5n",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "onTextChanged": "",
+              "isDeprecated": false,
+              "rightColumn": 28,
+              "iconName": "search",
+              "dynamicHeight": "FIXED",
+              "widgetId": "vuwk18kio6",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "left",
+              "defaultText": "2a8e562f-d11a-4b22-8cdd-377e39557949",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 11,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.values.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Product.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679496269971,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_table",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Product",
+                "values"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 72,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 192
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "values": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "values",
+                  "id": "values",
+                  "alias": "values",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "values",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"values\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Product": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "Product",
+                  "id": "Product",
+                  "alias": "Product",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Product\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 20,
+              "textSize": "0.875rem",
+              "widgetId": "lj7hyu71vb",
+              "minWidth": 450,
+              "tableData": "{{Utils.convertObjectToTable(S1_Product.getProduct.data.product, \"Product\")}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 11,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.values.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Product_Extension.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 21,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679561591235,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_Extension",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Product_Extension",
+                "values"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 36,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 158
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "values": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "values",
+                  "id": "values",
+                  "alias": "values",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "values",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Extension.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"values\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Product_Extension": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "Product Extension",
+                  "id": "Product_Extension",
+                  "alias": "Product Extension",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product Extension",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Extension.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Product Extension\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 42,
+              "textSize": "0.875rem",
+              "widgetId": "0eex0qqnxc",
+              "minWidth": 450,
+              "tableData": "{{Utils.convertObjectToTable(appsmith.store[`${Constants.OrderManagementProductPrefix}_ProductExtension`], \"Product Extension\")}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 37,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.values.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Tax.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 21,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679561619865,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_Tax",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "values",
+                "Tax"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 54,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 158
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "values": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "values",
+                  "id": "values",
+                  "alias": "values",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "values",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Tax.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"values\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Tax": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "Tax",
+                  "id": "Tax",
+                  "alias": "Tax",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Tax",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Tax.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tax\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 42,
+              "textSize": "0.875rem",
+              "widgetId": "fidutmbpi6",
+              "minWidth": 450,
+              "tableData": "{{Utils.convertObjectToTable(appsmith.store[`${Constants.OrderManagementProductPrefix}_ProductTax`], \"Tax\")}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 55,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.created_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.grade_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.product_id.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 21,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679497039303,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_Grade",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "grade_id",
+                "product_id",
+                "created_at"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 77,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 158
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "created_at": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "created_at",
+                  "id": "created_at",
+                  "alias": "created_at",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "created_at",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Grade.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "grade_id": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "grade_id",
+                  "id": "grade_id",
+                  "alias": "grade_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "grade_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Grade.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"grade_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "product_id": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "product_id",
+                  "id": "product_id",
+                  "alias": "product_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "product_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Grade.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "44gajp843t",
+              "minWidth": 450,
+              "tableData": "{{S2_Grade_Location.getGradeAndLocation.data.grade}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 79,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.created_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.product_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.location_id.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 21,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679497040837,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_GradeCopy",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "location_id",
+                "product_id",
+                "created_at"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 101,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 158
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "created_at": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "created_at",
+                  "id": "created_at",
+                  "alias": "created_at",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "created_at",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_GradeCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "product_id": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "product_id",
+                  "id": "product_id",
+                  "alias": "product_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "product_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_GradeCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "location_id": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "location_id",
+                  "id": "location_id",
+                  "alias": "location_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "location_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_GradeCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"location_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "mh2anodvjh",
+              "minWidth": 450,
+              "tableData": "{{S2_Grade_Location.getGradeAndLocation.data.location}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 11,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.values.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Billing_Schedule.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 43,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679562250120,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_BillingSchedule",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "values",
+                "Billing_Schedule"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 54,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 158
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "values": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "values",
+                  "id": "values",
+                  "alias": "values",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "values",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedule.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"values\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Billing_Schedule": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "Billing Schedule",
+                  "id": "Billing_Schedule",
+                  "alias": "Billing Schedule",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Billing Schedule",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedule.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Billing Schedule\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "d2es2hzjk7",
+              "minWidth": 450,
+              "tableData": "{{Utils.convertObjectToTable(appsmith.store[`${Constants.OrderManagementProductPrefix}_BillingSchedule`], \"Billing Schedule\")}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 73,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.values.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Product_Setting.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679496273802,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_Setting",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Product_Setting",
+                "values"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 101,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 158
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "values": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "values",
+                  "id": "values",
+                  "alias": "values",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "values",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Setting.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"values\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Product_Setting": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "Product Setting",
+                  "id": "Product_Setting",
+                  "alias": "Product Setting",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product Setting",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Setting.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Product Setting\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 20,
+              "textSize": "0.875rem",
+              "widgetId": "5fuanumtdi",
+              "minWidth": 450,
+              "tableData": "{{Utils.convertObjectToTable(S2_ProductSetting.getProductSetting.data, \"Product Setting\")}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 102,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.available_from.computedValue"
+                },
+                {
+                  "key": "primaryColumns.available_until.computedValue"
+                },
+                {
+                  "key": "primaryColumns.created_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.discount_amount_type.computedValue"
+                },
+                {
+                  "key": "primaryColumns.discount_amount_value.computedValue"
+                },
+                {
+                  "key": "primaryColumns.discount_type.computedValue"
+                },
+                {
+                  "key": "primaryColumns.discount_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.recurring_valid_duration.computedValue"
+                },
+                {
+                  "key": "primaryColumns.remarks.computedValue"
+                },
+                {
+                  "key": "primaryColumns.updated_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.parent_tag_id_validation.computedValue"
+                },
+                {
+                  "key": "primaryColumns.student_tag_id_validation.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679493043985,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_Discount",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "name",
+                "discount_amount_type",
+                "discount_amount_value",
+                "discount_type",
+                "recurring_valid_duration",
+                "student_tag_id_validation",
+                "parent_tag_id_validation",
+                "discount_id",
+                "available_from",
+                "available_until",
+                "remarks",
+                "updated_at",
+                "created_at"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 123,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 162,
+                "name": 111,
+                "discount_id": 280,
+                "discount_type": 204,
+                "discount_amount_type": 315,
+                "discount_amount_value": 196
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "available_from": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "available_from",
+                  "id": "available_from",
+                  "alias": "available_from",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "available_from",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"available_from\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "available_until": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "available_until",
+                  "id": "available_until",
+                  "alias": "available_until",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "available_until",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"available_until\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "created_at": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "created_at",
+                  "id": "created_at",
+                  "alias": "created_at",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "created_at",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "discount_amount_type": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "discount_amount_type",
+                  "id": "discount_amount_type",
+                  "alias": "discount_amount_type",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "discount_amount_type",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"discount_amount_type\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "discount_amount_value": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "discount_amount_value",
+                  "id": "discount_amount_value",
+                  "alias": "discount_amount_value",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "discount_amount_value",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"discount_amount_value\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "discount_type": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "discount_type",
+                  "id": "discount_type",
+                  "alias": "discount_type",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "discount_type",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"discount_type\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "discount_id": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "discount_id",
+                  "id": "discount_id",
+                  "alias": "discount_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "discount_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"discount_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "name": {
+                  "allowCellWrapping": false,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "name",
+                  "id": "name",
+                  "alias": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "recurring_valid_duration": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "recurring_valid_duration",
+                  "id": "recurring_valid_duration",
+                  "alias": "recurring_valid_duration",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "recurring_valid_duration",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"recurring_valid_duration\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "remarks": {
+                  "allowCellWrapping": false,
+                  "index": 9,
+                  "width": 150,
+                  "originalId": "remarks",
+                  "id": "remarks",
+                  "alias": "remarks",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "remarks",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"remarks\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "updated_at": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "updated_at",
+                  "id": "updated_at",
+                  "alias": "updated_at",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "updated_at",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updated_at\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "parent_tag_id_validation": {
+                  "allowCellWrapping": false,
+                  "index": 11,
+                  "width": 150,
+                  "originalId": "parent_tag_id_validation",
+                  "id": "parent_tag_id_validation",
+                  "alias": "parent_tag_id_validation",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "parent_tag_id_validation",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"parent_tag_id_validation\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "student_tag_id_validation": {
+                  "allowCellWrapping": false,
+                  "index": 12,
+                  "width": 150,
+                  "originalId": "student_tag_id_validation",
+                  "id": "student_tag_id_validation",
+                  "alias": "student_tag_id_validation",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "student_tag_id_validation",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Discount.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"student_tag_id_validation\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "ws4l0mfeu3",
+              "minWidth": 450,
+              "tableData": "{{S3_Discount_Price.getProductDiscount.data.data.product_discount.map((product_discount) => product_discount.discount)}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 124,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.created_at.computedValue"
+                },
+                {
+                  "key": "primaryColumns.product_price_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_schedule_period_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.price.computedValue"
+                },
+                {
+                  "key": "primaryColumns.product_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.quantity.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679493073048,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_Prices",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "product_price_id",
+                "price",
+                "quantity",
+                "billing_schedule_period_id",
+                "product_id",
+                "created_at"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 145,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 162,
+                "product_id": 304,
+                "billing_schedule_period_id": 306,
+                "quantity": 102,
+                "price": 84
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "created_at": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "created_at",
+                  "id": "created_at",
+                  "alias": "created_at",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "created_at",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Prices.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "product_price_id": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "product_price_id",
+                  "id": "product_price_id",
+                  "alias": "product_price_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "product_price_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Prices.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product_price_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_schedule_period_id": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "billing_schedule_period_id",
+                  "id": "billing_schedule_period_id",
+                  "alias": "billing_schedule_period_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_schedule_period_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Prices.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_schedule_period_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "price": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "price",
+                  "id": "price",
+                  "alias": "price",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "price",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Prices.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "product_id": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "product_id",
+                  "id": "product_id",
+                  "alias": "product_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "product_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Prices.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "quantity": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "quantity",
+                  "id": "quantity",
+                  "alias": "quantity",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "quantity",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_Prices.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"quantity\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "uh7npsjkaw",
+              "minWidth": 450,
+              "tableData": "{{S3_Discount_Price.getProductPrices.data.data.product_price}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 146,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.billing_schedule_period_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_schedule_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.start_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.end_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_ratios.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679561740769,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_BillingSchedulePeriod",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "billing_schedule_period_id",
+                "billing_schedule_id",
+                "name",
+                "billing_date",
+                "start_date",
+                "end_date",
+                "billing_ratios"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 175,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 162,
+                "product_id": 304,
+                "billing_schedule_period_id": 306,
+                "quantity": 102,
+                "price": 84
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "billing_schedule_period_id": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "billing_schedule_period_id",
+                  "id": "billing_schedule_period_id",
+                  "alias": "billing_schedule_period_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_schedule_period_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_schedule_period_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_schedule_id": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "billing_schedule_id",
+                  "id": "billing_schedule_id",
+                  "alias": "billing_schedule_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_schedule_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_schedule_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "name": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "name",
+                  "id": "name",
+                  "alias": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_date": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "billing_date",
+                  "id": "billing_date",
+                  "alias": "billing_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "start_date": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "start_date",
+                  "id": "start_date",
+                  "alias": "start_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "start_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"start_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "end_date": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "end_date",
+                  "id": "end_date",
+                  "alias": "end_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "end_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"end_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_ratios": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "billing_ratios",
+                  "id": "billing_ratios",
+                  "alias": "billing_ratios",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_ratios",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingSchedulePeriod.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_ratios\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "030ugm4gdp",
+              "minWidth": 450,
+              "tableData": "{{appsmith.store[`${Constants.OrderManagementProductPrefix}_BillingSchedulePeriods`]}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 176,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.billing_schedule_period_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.start_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.end_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_ratio_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_ratio_numerator.computedValue"
+                },
+                {
+                  "key": "primaryColumns.billing_ratio_denominator.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679561758500,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Product_BillingRatios",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "billing_schedule_period_id",
+                "start_date",
+                "end_date",
+                "billing_ratio_id",
+                "billing_ratio_numerator",
+                "billing_ratio_denominator"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 253,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 175,
+                "status": 85,
+                "attribute": 162,
+                "product_id": 304,
+                "billing_schedule_period_id": 306,
+                "quantity": 102,
+                "price": 84,
+                "start_date": 211,
+                "end_date": 216,
+                "billing_ratio_id": 320,
+                "billing_ratio_numerator": 198
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "billing_schedule_period_id": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "billing_schedule_period_id",
+                  "id": "billing_schedule_period_id",
+                  "alias": "billing_schedule_period_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_schedule_period_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingRatios.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_schedule_period_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "start_date": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "start_date",
+                  "id": "start_date",
+                  "alias": "start_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "start_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingRatios.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"start_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "end_date": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "end_date",
+                  "id": "end_date",
+                  "alias": "end_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "end_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingRatios.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"end_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_ratio_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "billing_ratio_id",
+                  "id": "billing_ratio_id",
+                  "alias": "billing_ratio_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_ratio_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingRatios.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_ratio_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_ratio_numerator": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "billing_ratio_numerator",
+                  "id": "billing_ratio_numerator",
+                  "alias": "billing_ratio_numerator",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_ratio_numerator",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingRatios.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_ratio_numerator\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "billing_ratio_denominator": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "billing_ratio_denominator",
+                  "id": "billing_ratio_denominator",
+                  "alias": "billing_ratio_denominator",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "billing_ratio_denominator",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Product_BillingRatios.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"billing_ratio_denominator\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "8piwx4kmcy",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "rrrvxuad63",
+              "minWidth": 450,
+              "tableData": "{{appsmith.store[`${Constants.OrderManagementProductPrefix}_BillingRatios`]}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "loadingTable": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "architecture-mastermgmt_Validater.checkColumn",
+              "name": "S2_ProductSetting.getProductSetting",
+              "collectionId": "architecture-mastermgmt_Validater",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const result = await S2_GetProductSetting.run();\n  return result.data?.product_setting[0];\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "order-data-master_S2_Grade_Location.getGradeAndLocation",
+              "name": "S2_Grade_Location.getGradeAndLocation",
+              "collectionId": "order-data-master_S2_Grade_Location",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const result = await S2_GetProductGradeAndLocation.run();\n  return {\n    grade: result.data?.product_grade,\n    location: result.data?.product_location\n  };\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "architecture-lesson-list_Architecture_Past_Lessons",
+              "name": "S3_Discount_Price.getProductPrices",
+              "collectionId": "order-data-master_S3_Discount_Price",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const result = await S3_GetProductPriceByProductId.run();\n  return result;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "order-data-master_S1_Product.getProduct",
+              "name": "S1_Product.getProduct",
+              "collectionId": "order-data-master_S1_Product",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const resultProduct = await S1_GetManyProductsByProductIds.run();\n  if (!resultProduct) return {};\n  const product = resultProduct.data?.product[0];\n  S2_ProductExtension.getProductExtension(product.product_type).then(res => {\n    storeValue(`${Constants.OrderManagementProductPrefix}_ProductExtension`, res, false);\n  });\n  S2_Tax_BillingSchedule.getTax(product.tax_id).then(res => {\n    storeValue(`${Constants.OrderManagementProductPrefix}_ProductTax`, res, false);\n  });\n  S2_Tax_BillingSchedule.getBillingScheduleById(product.billing_schedule_id).then(res => {\n    storeValue(`${Constants.OrderManagementProductPrefix}_BillingSchedule`, res, false);\n  });\n  S4_BillingSchedulePeriod.getBillingSchedulePeriod(product.billing_schedule_id).then(resultBillingSchedulePeriod => {\n    storeValue(`${Constants.OrderManagementProductPrefix}_BillingSchedulePeriods`, resultBillingSchedulePeriod, false);\n    const billingSchedulePeriodIds = resultBillingSchedulePeriod.map(billingSchedulePeriod => {\n      return billingSchedulePeriod.billing_schedule_period_id;\n    });\n    S4_BillingSchedulePeriod.getBillingRatiosHaha(billingSchedulePeriodIds).then(res => {\n      storeValue(`${Constants.OrderManagementProductPrefix}_BillingRatios`, res.flat(), false);\n    });\n  });\n  return {\n    product\n  };\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "order-data-master_S3_Discount_Price.getProductDiscount",
+              "name": "S3_Discount_Price.getProductDiscount",
+              "collectionId": "order-data-master_S3_Discount_Price",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const result = await S3_GetManyAssociatedDiscounts.run();\n  return result;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "order-data-master",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6413d91737e2ed70c8a31d74_6413d95f37e2ed70c8a31dba"
+}

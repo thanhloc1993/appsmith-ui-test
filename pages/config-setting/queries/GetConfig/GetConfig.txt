@@ -1,0 +1,15 @@
+{
+	query: '
+		query Architecture_GetExternalConfigsByKeys($keys: [String!]!) {
+			external_configuration_value(where: {config_key: {_in: $keys}}) {
+				configuration_id
+				config_value
+				config_key
+				last_editor
+			}
+		}
+	',
+	variables: {
+		"keys": {{this.params.keys}}
+	}
+}

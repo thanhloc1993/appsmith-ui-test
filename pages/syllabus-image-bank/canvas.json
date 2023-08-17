@@ -1,0 +1,463 @@
+{
+  "unpublishedPage": {
+    "name": "syllabus-image-bank",
+    "slug": "syllabus-image-bank",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 680,
+          "containerStyle": "none",
+          "snapRows": 80,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 78,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "mobileBottomRow": 4,
+              "widgetName": "Button1",
+              "onClick": "{{PostMessageUtils.openBOUploadPopup();}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "translationJp": "画像をアップロード",
+              "mobileRightColumn": 64,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 55,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Upload Image",
+              "isDisabled": false,
+              "key": "vhfje3vs7o",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "isDefaultClickDisabled": true,
+              "iconName": "cloud-upload",
+              "widgetId": "lmmfgvy001",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 0,
+              "responsiveBehavior": "hug",
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 48,
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "multiRowSelection": false,
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": false,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 5,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "primaryColumns.action.computedValue"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.image.computedValue"
+                },
+                {
+                  "key": "primaryColumns.fileSize.computedValue"
+                },
+                {
+                  "key": "primaryColumns.action.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.isCellVisible"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1690364260622,
+              "primaryColumnId": "name",
+              "defaultSelectedRowIndices": "[\n  0\n]",
+              "mobileBottomRow": 33,
+              "widgetName": "ImageBankHistoryTable",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "name",
+                "image",
+                "fileSize",
+                "customColumn1",
+                "action"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.action.iconName"
+                },
+                {
+                  "key": "horizontalAlignment"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.isCellVisible"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 68,
+              "columnWidthMap": {
+                "task": 785,
+                "step": 109,
+                "status": 279.00000000000006,
+                "image": 207,
+                "name": 700,
+                "fileSize": 175
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 34,
+              "parentColumnSpace": 20.03125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.action.onClick"
+                }
+              ],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "action": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "action",
+                  "originalId": "action",
+                  "alias": "action",
+                  "allowSameOptionsInNewRow": true,
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isCellEditable": false,
+                  "isDisabled": false,
+                  "isDerived": false,
+                  "label": "Action",
+                  "onClick": "{{ImageBankHandlers.handleCopyImageName();}}",
+                  "computedValue": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
+                  "validation": {},
+                  "sticky": "",
+                  "labelColor": "#FFFFFF",
+                  "buttonLabel": "Copy",
+                  "customAlias": "",
+                  "iconName": "duplicate",
+                  "buttonVariant": "PRIMARY",
+                  "menuItemsSource": "STATIC",
+                  "menuButtoniconName": "duplicate",
+                  "menuVariant": "TERTIARY",
+                  "menuButtonLabel": "Copy",
+                  "sourceData": [],
+                  "configureMenuItems": {
+                    "label": "Configure Menu Items",
+                    "id": "config",
+                    "config": {
+                      "id": "config",
+                      "label": "Menu Item",
+                      "isVisible": true,
+                      "isDisabled": false
+                    }
+                  },
+                  "iconAlign": "left",
+                  "menuItems": {
+                    "menuItem0s40wb8sct": {
+                      "id": "menuItem0s40wb8sct",
+                      "index": 0,
+                      "label": "Menu Item 1",
+                      "widgetId": "cysztdeq4k",
+                      "isDisabled": false,
+                      "isVisible": true
+                    }
+                  },
+                  "buttonColor": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "boxShadow": "none"
+                },
+                "name": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "name",
+                  "id": "name",
+                  "alias": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "image": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "image",
+                  "id": "image",
+                  "alias": "image",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "image",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Image",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"image\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "fileSize": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "fileSize",
+                  "id": "fileSize",
+                  "alias": "fileSize",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "FileSize",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fileSize\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "customColumn1": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "customColumn1",
+                  "id": "customColumn1",
+                  "alias": "Action",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( Boolean(Unleash.isEnabledbyUnleash(\"Syllabus_ImageBank_Appsmith_BulkDeleteImages\"))))}}",
+                  "isDerived": true,
+                  "label": "Action",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "#ef4444",
+                  "borderRadius": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{ImageBankHistoryTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "trash",
+                  "buttonVariant": "TERTIARY"
+                }
+              },
+              "key": "he4n55xe9v",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "qeuzbtrihi",
+              "minWidth": 450,
+              "tableData": "{{appsmith.store.imageHistoryData}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 5,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 0,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "syllabus-image-bank_ImageHistoryQuery.queryImageHistory",
+              "name": "ImageHistoryQuery.queryImageHistory",
+              "collectionId": "syllabus-image-bank_ImageHistoryQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const imageHistoryResponse = await SyllabusImageHistoryQuery.run();\n  const imageHistoryData = imageHistoryResponse.data.content_bank_medias;\n  const imageHistoryTableData = imageHistoryData.map(({name, resource, file_size_bytes}) => ({\n    name,\n    image: resource,\n    fileSize: `${Math.round(file_size_bytes / 10000) / 100} MB`,\n    action: name\n  }));\n  storeValue(\"imageHistoryData\", imageHistoryTableData);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "syllabus-image-bank_SyllabusImageHistoryQuery",
+              "name": "SyllabusImageHistoryQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "syllabus-image-bank",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64881d0dddfff7140433420a_64881d39b1e3bd17df6ef96b"
+}

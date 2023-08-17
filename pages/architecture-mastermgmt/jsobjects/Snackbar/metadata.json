@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Snackbar",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Snackbar",
+  "deleted": false,
+  "gitSyncId": "640be7ac37e2ed70c8a31ad8_64192a96f3e73136f105bd23"
+}

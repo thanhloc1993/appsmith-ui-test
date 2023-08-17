@@ -1,0 +1,36 @@
+{
+  "query": '
+		query Payment_GetManyAssociatedDiscountsByProductIdV3($product_id: String!, $current_date: timestamptz!, $name: String, $limit: Int = 30) {
+		product_discount(where: {product_id: {_eq: $product_id}, discount: {_and: [{available_from: {_lte: $current_date}}, {available_until: {_gte: $current_date}}, {name: {_ilike: $name}}]}}, limit: $limit) {
+			...AssociatedDiscountAttrs
+		}
+	}
+
+		fragment AssociatedDiscountAttrs on product_discount {
+			discount {
+				...CommonDiscountAttrs
+			}
+		}
+
+		fragment CommonDiscountAttrs on discount {
+			available_from
+			available_until
+			created_at
+			discount_amount_type
+			discount_amount_value
+			discount_type
+			discount_id
+			name
+			recurring_valid_duration
+			remarks
+			updated_at
+			parent_tag_id_validation
+			student_tag_id_validation
+		}
+',
+  "variables": {
+		"product_id": {{search_product_id.text}},
+		"current_date": {{ new Date() }},
+		"name": "%%",
+  }
+}

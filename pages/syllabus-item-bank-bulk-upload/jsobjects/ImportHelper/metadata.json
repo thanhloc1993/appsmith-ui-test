@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ImportHelper",
+    "pageId": "syllabus-item-bank-bulk-upload",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "syllabus-item-bank-bulk-upload_ImportHelper",
+  "deleted": false,
+  "gitSyncId": "646db23197a3567c37abc68f_64761ee36f85f751a134c668"
+}

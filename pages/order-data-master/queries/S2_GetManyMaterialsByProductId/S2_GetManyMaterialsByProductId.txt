@@ -1,0 +1,14 @@
+{
+  "query": '
+    query Payment_GetManyMaterialsByProductIdsV2($productIds: [String!]) {
+        material(where: { material_id: { _in: $productIds } }) {
+            material_id
+            material_type
+            custom_billing_date
+        }
+    }
+',
+  "variables": {
+		"productIds": {{[search_product_id.text]}},
+  }
+}

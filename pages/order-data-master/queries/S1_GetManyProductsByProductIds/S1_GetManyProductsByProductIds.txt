@@ -1,0 +1,37 @@
+{
+  "query": '
+    query Payment_GetManyProductsByProductIdsV3(
+        $productIds: [String!]
+        $current_date: timestamptz
+    ) {
+        product(
+            where: {
+                product_id: { _in: $productIds }
+                _and: [
+                    { available_from: { _lte: $current_date } }
+                    { available_until: { _gte: $current_date } }
+                ]
+            }
+            order_by: { product_id: asc }
+        ) {
+            product_id
+            available_from
+            available_until
+            billing_schedule_id
+            created_at
+            custom_billing_period
+            disable_pro_rating_flag
+            name
+            product_type
+            remarks
+            tax_id
+            updated_at
+            is_unique
+        }
+    }
+',
+  "variables": {
+		"productIds": {{[search_product_id.text]}},
+		"current_date": {{ new Date() }}
+  }
+}

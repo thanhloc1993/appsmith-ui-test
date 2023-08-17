@@ -1,0 +1,19 @@
+{
+	query: '
+		mutation Architecture_UpdateExternalConfigByKey($configKey: String!, $configValue: String!, $lastEditor: String = "") {
+  update_external_configuration_value(where: {config_key: {_eq: $configKey}}, _set: {config_value: $configValue, updated_at: "now()", last_editor: $lastEditor}) {
+    affected_rows
+    returning {
+      configuration_id
+      config_key
+      config_value
+      updated_at
+    }
+  }
+}
+	',
+	variables: {
+		"configKey": {{this.params.configKey}},
+		"configValue": {{this.params.configValue}}
+	}
+}

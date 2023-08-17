@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_Filter",
+    "pageId": "architecture-lesson-list",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-lesson-list_JS_Filter",
+  "deleted": false,
+  "gitSyncId": "63a97af6c5282d4e403d3d57_63aa9e22c5282d4e403d3dd5"
+}

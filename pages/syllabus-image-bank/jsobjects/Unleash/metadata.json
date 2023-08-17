@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Unleash",
+    "pageId": "syllabus-image-bank",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "syllabus-image-bank_Unleash",
+  "deleted": false,
+  "gitSyncId": "64c00594e6b6831b4eaae21b_64c0ecb79011ba78fe30b7a8"
+}

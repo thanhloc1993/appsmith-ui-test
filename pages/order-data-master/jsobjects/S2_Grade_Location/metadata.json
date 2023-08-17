@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "S2_Grade_Location",
+    "pageId": "order-data-master",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "order-data-master_S2_Grade_Location",
+  "deleted": false,
+  "gitSyncId": "6413d91737e2ed70c8a31d74_641b146b314b2413cd4535be"
+}

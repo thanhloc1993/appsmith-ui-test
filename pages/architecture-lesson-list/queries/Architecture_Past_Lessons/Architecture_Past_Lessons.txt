@@ -1,0 +1,36 @@
+{
+	query: '
+			
+		query Architecture_PastLessonList($limit: Int = 10, $offset: Int =
+          0, $time: timestamptz) {
+		 lessons(limit: $limit, offset: $offset, where: {start_time: {_lte: $time}}, order_by: 	      {start_time: desc, end_time: desc, lesson_id: desc}) {
+              ...LessonAttrs
+            }
+            lessons_aggregate {
+              aggregate {
+                count
+              }
+            }
+		}
+	fragment LessonAttrs on lessons {
+            lesson_id
+            start_time
+            end_time
+            scheduling_status
+            center_id
+            lessons_teachers {
+              teacher_id
+              teacher_name
+            }
+            teaching_medium
+            teaching_method
+            course_id
+            class_id
+          }
+	',
+	variables: {
+		"time": {{this.params.time}},
+		"limit": {{this.params.limit}},
+		"offset": {{this.params.offset}}
+	}
+}

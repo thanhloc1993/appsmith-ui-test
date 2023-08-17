@@ -1,0 +1,9 @@
+{{
+{
+	"paging": {
+		"limit": List1.pageSize,
+			"offset_integer": (List1.pageNo - 1) * List1.pageSize,
+	},
+	"language": appsmith.URL.queryParams["lang"] === "ja" ? "jp" : appsmith.URL.queryParams["lang"]
+}
+}}

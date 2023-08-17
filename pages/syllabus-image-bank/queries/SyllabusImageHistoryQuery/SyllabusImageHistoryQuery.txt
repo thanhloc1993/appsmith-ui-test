@@ -1,0 +1,13 @@
+{
+	query: '
+		query Syllabus_GetManyImageBankImages {
+			content_bank_medias(order_by: {updated_at: desc}) {
+				id
+				name
+				resource
+				type
+				file_size_bytes
+			}
+		}
+	'
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Import",
+    "pageId": "calendar-academic",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "calendar-academic_Import",
+  "deleted": false,
+  "gitSyncId": "6440b81241f3c409eafa8a76_6440b82841f3c409eafa8b3e"
+}

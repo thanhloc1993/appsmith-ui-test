@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "SchedulingJob",
+    "pageId": "scheduling-setup-constraint",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "scheduling-setup-constraint_SchedulingJob",
+  "deleted": false,
+  "gitSyncId": "647d7d43ddfff71404331c97_649a6c0554b984022efd9b37"
+}

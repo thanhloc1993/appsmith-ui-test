@@ -1,0 +1,21 @@
+{
+	"query":'
+		 query Lesson_StaffList($limit: Int = 10, $offset: Int = 0, $email: String, $name: String) 			{
+			staff(
+				limit: $limit
+				offset: $offset
+				order_by: {created_at: desc}
+				where: {user: {_or: [{name: {_ilike: $name}}, {email: {_ilike: $email}}]}}
+			) {
+				staff_id
+				user {
+					name
+					email
+				}
+			}
+		}',
+	variables:{
+		"limit":30,
+		"offset":0
+	}
+}

@@ -1,0 +1,6 @@
+{{ 
+{
+	"payload": this.params.payload,
+	"location_id": SelectLocation.selectedOptionValue,
+}
+}}

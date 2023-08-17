@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "WidgetDataLoader",
+    "pageId": "communication-dashboard-v2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "communication-dashboard-v2_WidgetDataLoader",
+  "deleted": false,
+  "gitSyncId": "64cc6668b244185b0e1e392c_64cc6709fbea717eb8fbabbc"
+}

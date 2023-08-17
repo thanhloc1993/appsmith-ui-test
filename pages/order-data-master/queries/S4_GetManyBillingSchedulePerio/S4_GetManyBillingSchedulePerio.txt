@@ -1,0 +1,31 @@
+{
+  "query": '
+		query Payment_GetManyBillingSchedulePeriodsByBillingScheduleId($billingScheduleId: String!) {
+        billing_schedule_period(
+            where: { billing_schedule_id: { _eq: $billingScheduleId } }
+            order_by: { start_date: asc }
+        ) {
+            billing_schedule_period_id
+            billing_schedule_id
+            name
+            billing_date
+            start_date
+            end_date
+            billing_ratios(order_by: { start_date: asc }) {
+                ...BillingRatioAttrs
+            }
+        }
+    }
+		fragment BillingRatioAttrs on billing_ratio {
+        billing_ratio_id
+        start_date
+        end_date
+        billing_schedule_period_id
+        billing_ratio_numerator
+        billing_ratio_denominator
+    }
+',
+  "variables": {
+		"billingScheduleId": {{this.params.billingScheduleId}}
+  }
+}

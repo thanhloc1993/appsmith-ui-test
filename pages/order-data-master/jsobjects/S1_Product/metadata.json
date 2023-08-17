@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "S1_Product",
+    "pageId": "order-data-master",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "order-data-master_S1_Product",
+  "deleted": false,
+  "gitSyncId": "6413d91737e2ed70c8a31d74_6413d95f37e2ed70c8a31dc8"
+}

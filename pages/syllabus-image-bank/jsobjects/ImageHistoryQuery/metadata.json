@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ImageHistoryQuery",
+    "pageId": "syllabus-image-bank",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "syllabus-image-bank_ImageHistoryQuery",
+  "deleted": false,
+  "gitSyncId": "64a68e516acc7d23078450bf_64a7ba983a623e55713e9df3"
+}

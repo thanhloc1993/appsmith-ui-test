@@ -1,0 +1,10 @@
+{
+	query: '
+		query Architecture_GetAcademicYears {
+            academic_year {
+              academic_year_id
+              name
+            }
+    }
+	'
+}

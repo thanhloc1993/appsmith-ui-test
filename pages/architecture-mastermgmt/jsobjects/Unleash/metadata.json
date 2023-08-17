@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Unleash",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_Unleash",
+  "deleted": false,
+  "gitSyncId": "6446205541f3c409eafa954d_644790141fbe8e3f78573140"
+}

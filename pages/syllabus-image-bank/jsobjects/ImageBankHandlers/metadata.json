@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ImageBankHandlers",
+    "pageId": "syllabus-image-bank",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "syllabus-image-bank_ImageBankHandlers",
+  "deleted": false,
+  "gitSyncId": "64a68e516acc7d23078450bf_64acc147c4227300fa5c0ed2"
+}

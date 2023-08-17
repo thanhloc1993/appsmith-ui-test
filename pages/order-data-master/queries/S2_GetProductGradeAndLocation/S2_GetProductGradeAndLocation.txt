@@ -1,0 +1,19 @@
+{
+  "query": '
+    query Order_GetProductGradeAndLocationIds($productId: String!) {
+			product_grade(where: {product_id: {_eq: $productId}}) {
+				created_at
+				grade_id
+				product_id
+			}
+			product_location(where: {product_id: {_eq: $productId}}) {
+				created_at
+				location_id
+				product_id
+			}
+		}
+',
+  "variables": {
+		"productId": {{search_product_id.text}},
+  }
+}

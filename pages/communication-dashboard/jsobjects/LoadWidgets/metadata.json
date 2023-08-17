@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "LoadWidgets",
+    "pageId": "communication-dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "communication-dashboard_LoadWidgets",
+  "deleted": false,
+  "gitSyncId": "6433c3c46ab2924dd6a8f142_6434cc0c490f4c05a8d31ade"
+}

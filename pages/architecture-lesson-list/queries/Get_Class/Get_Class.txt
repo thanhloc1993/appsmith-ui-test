@@ -1,0 +1,18 @@
+{
+	"query":'
+			 query Lesson_ClassesByNameAndCourseIds($course_ids: [String!], $name: String, $limit: Int = 30, $order_by: [class_order_by!] = {name: asc}) {
+		class(
+			where: {_and: [{course_id: {_in: $course_ids}}, {name: {_ilike: $name}}]}
+			limit: $limit
+			order_by: $order_by
+		) {
+			class_id
+			name
+			course_id
+		}
+	}
+	',
+	variables:{
+		"limit":30,
+	}
+}

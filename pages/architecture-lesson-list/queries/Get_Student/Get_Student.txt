@@ -1,0 +1,31 @@
+{
+	"query":'
+		   query StudentsManyReferenceByNameAndEmail(
+        $keyword: String
+        $limit: Int = 30
+        $offset: Int = 0
+    ) {
+        users(
+            where: {
+                user_group: { _eq: "USER_GROUP_STUDENT" }
+                _or: [{ email: { _ilike: $keyword } }, { name: { _ilike: $keyword } }]
+            }
+            limit: $limit
+            offset: $offset
+            order_by: { created_at: desc }
+        ) {
+            ...StudentUserAttrs
+        }
+    }
+		fragment StudentUserAttrs on users {
+        user_id
+        name
+        email
+        avatar
+    }
+',
+	variables:{
+		"limit":30,
+		"offset":0,
+	}
+}

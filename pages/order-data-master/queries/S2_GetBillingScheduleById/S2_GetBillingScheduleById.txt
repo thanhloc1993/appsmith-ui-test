@@ -1,0 +1,17 @@
+{
+  "query": '
+    query Order_GetBillingScheduleById($billingScheduleId: String!) {
+			billing_schedule(where: {billing_schedule_id: {_eq: $billingScheduleId}}) {
+				billing_schedule_id
+				created_at
+				is_archived
+				name
+				remarks
+				updated_at
+			}
+		}
+',
+  "variables": {
+		"billingScheduleId": {{this.params.billingScheduleId}},
+  }
+}

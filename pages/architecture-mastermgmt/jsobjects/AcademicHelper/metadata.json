@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "AcademicHelper",
+    "pageId": "architecture-mastermgmt",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "academicClosedDay",
+        "value": "[]"
+      },
+      {
+        "name": "isFecthLocation",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "architecture-mastermgmt_AcademicHelper",
+  "deleted": false,
+  "gitSyncId": "6447e4f71fbe8e3f7857334e_64489b351fbe8e3f7857344f"
+}

@@ -1,0 +1,16 @@
+{
+	query: '
+		query Architecture_GetInternalConfigsByKeys($keys: [String!]!) {
+			internal_configuration_value(where: {config_key: {_in: $keys}}) {
+				configuration_id
+				config_value
+				config_value_type
+				config_key
+				last_editor
+			}
+		}
+	',
+	variables: {
+		"keys": {{this.params.keys}}
+	}
+}

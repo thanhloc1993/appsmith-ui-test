@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Snackbar",
+    "pageId": "syllabus-item-bank-bulk-upload",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "syllabus-item-bank-bulk-upload_Snackbar",
+  "deleted": false,
+  "gitSyncId": "646db23197a3567c37abc68f_646db5bd1112fd7e648d7245"
+}

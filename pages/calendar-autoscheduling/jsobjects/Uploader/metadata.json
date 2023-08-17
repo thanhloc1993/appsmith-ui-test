@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Uploader",
+    "pageId": "calendar-autoscheduling",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "calendar-autoscheduling_Uploader",
+  "deleted": false,
+  "gitSyncId": "64780995d15f8910831d5761_647f29ebb1e3bd17df6eea22"
+}

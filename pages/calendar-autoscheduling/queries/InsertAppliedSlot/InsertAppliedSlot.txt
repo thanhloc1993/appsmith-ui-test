@@ -1,0 +1,12 @@
+{
+	query: '
+		mutation Calendar_InsertAppliedSlot ($data: [applied_slot_insert_input!]!) {
+			insert_applied_slot(objects: $data) {
+				affected_rows
+			}
+		}
+	',
+  variables: {
+		"data":  {{this.params.data}}
+	}
+}

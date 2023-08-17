@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Validation",
+    "pageId": "syllabus-item-bank-bulk-upload",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "syllabus-item-bank-bulk-upload_Validation",
+  "deleted": false,
+  "gitSyncId": "647e07b0ddfff714043320d4_647e2994b1e3bd17df6ee846"
+}

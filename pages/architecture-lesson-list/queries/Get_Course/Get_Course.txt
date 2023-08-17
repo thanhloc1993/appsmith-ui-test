@@ -1,0 +1,34 @@
+{
+	"query":'
+		 query CoursesManyReference($name: String, $limit: Int = 10, $offset: Int = 0) {
+			courses(
+				limit: $limit
+				offset: $offset
+				order_by: {created_at: desc, display_order: asc, name: asc, course_id: asc}
+				where: {name: {_ilike: $name}}
+			) {
+				...CourseAttrs
+			}
+			courses_aggregate(where: {name: {_ilike: $name}}) {
+				aggregate {
+					count
+				}
+			}
+		}
+
+		fragment CourseAttrs on courses {
+			course_id
+			name
+			icon
+			grade
+			subject
+			country
+			school_id
+			display_order
+		}
+	',
+	variables:{
+		"limit":30,
+		"offset":0,
+	}
+}

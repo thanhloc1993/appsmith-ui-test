@@ -1,0 +1,12 @@
+{
+  "query": '
+    query Architecture_ExportCourseTypes {
+			course_type {
+				course_type_id
+				name
+				remarks
+				is_archived
+			}
+		}
+'
+}

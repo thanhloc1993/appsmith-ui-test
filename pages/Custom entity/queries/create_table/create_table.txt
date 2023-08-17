@@ -1,6 +1,0 @@
-{{
- {
-	 "sql": input_sql.text,
-	 "table_name": input_table.text
- }
-}}

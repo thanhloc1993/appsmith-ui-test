@@ -1,0 +1,12 @@
+{
+	query: '
+		mutation Calendar_InsertTeacherSubject($data: [teacher_subject_insert_input!]!) {
+			insert_teacher_subject(objects: $data) {
+				affected_rows
+			}
+		}
+	',
+  variables: {
+		"data":  {{this.params.data}}
+	}
+}
