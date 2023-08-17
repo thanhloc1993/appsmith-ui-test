@@ -1515,6 +1515,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "communication-dashboard_GetSystemNotifications",
+              "name": "GetSystemNotifications",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "\n{\n\t\"paging\": {\n\t\t\"limit\": List1.pageSize,\n\t\t\t\"offset_integer\": (List1.pageNo - 1) * List1.pageSize,\n\t},\n\t\"language\": appsmith.URL.queryParams[\"lang\"] === \"ja\" ? \"jp\" : appsmith.URL.queryParams[\"lang\"]\n}\n",
+                "appsmith.store.token"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "communication-dashboard_LoadWidgets.loadSubmittedCountTimesheets",
               "name": "LoadWidgets.loadSubmittedCountTimesheets",
               "collectionId": "communication-dashboard_LoadWidgets",
@@ -1522,19 +1533,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async function () {\n  if (appsmith.store.user_id && appsmith.store.user_id !== appsmith.URL.queryParams[\"userId\"]) {\n    await removeValue('token');\n    if (appsmith.URL.queryParams[\"origin\"]) {\n      postWindowMessage(JSON.stringify({\n        \"type\": \"POST_TOKEN\"\n      }), \"window\", appsmith.URL.queryParams[\"origin\"]);\n    }\n  }\n  await storeValue('user_id', appsmith.URL.queryParams[\"userId\"]);\n  try {\n    const submittedTimesheets = await GetSubmittedTimesheets.run({\n      location_ids: appsmith.URL.queryParams[\"locations\"] ? appsmith.URL.queryParams[\"locations\"].split(\",\") : []\n    });\n    if (submittedTimesheets.count !== undefined) {\n      await storeValue('submitted_count', submittedTimesheets.count, false);\n      await storeValue('is_enabled_timesheet', submittedTimesheets.isEnabled, false);\n    }\n  } catch {\n    await storeValue('submitted_count', 0, false);\n    await storeValue('is_enabled_timesheet', false, false);\n  }\n  await storeValue('is_empty_widget', !appsmith.store.is_enabled_timesheet);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "communication-dashboard_GetSystemNotifications",
-              "name": "GetSystemNotifications",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "\n{\n\t\"paging\": {\n\t\t\"limit\": List1.pageSize,\n\t\t\t\"offset_integer\": (List1.pageNo - 1) * List1.pageSize,\n\t},\n\t\"language\": appsmith.URL.queryParams[\"lang\"]\n}\n",
-                "appsmith.store.token"
               ],
               "timeoutInMillisecond": 10000
             }

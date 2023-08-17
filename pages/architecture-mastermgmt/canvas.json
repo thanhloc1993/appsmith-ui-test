@@ -1445,16 +1445,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "architecture-mastermgmt_ArchGetLocationsByLevelConfig",
-              "name": "ArchGetLocationsByLevelConfig",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.token"
-              ],
-              "timeoutInMillisecond": 20000
-            },
-            {
               "id": "architecture-mastermgmt_Configure.getConfig",
               "name": "Configure.getConfig",
               "collectionId": "architecture-mastermgmt_Configure",
@@ -1464,6 +1454,18 @@
                 "async () => {\n  let config = await ArchGetInternalConfig.run({\n    keys: [\"arch.master_management.import_rules\", \"arch.master_management.enable_export\", \"arch.master_management.enable_import\"]\n  });\n  if (config.data && config.data.internal_configuration_value.length > 0) {\n    const importRules = config.data.internal_configuration_value.find(x => x.config_key == 'arch.master_management.import_rules');\n    const exportWhitelist = config.data.internal_configuration_value.find(x => x.config_key == 'arch.master_management.enable_export');\n    const importWhitelist = config.data.internal_configuration_value.find(x => x.config_key == 'arch.master_management.enable_import');\n    if (exportWhitelist) {\n      try {\n        storeValue(\"enableExportButton\", JSON.parse(exportWhitelist.config_value));\n      } catch (error) {\n        console.error(\"error store enableExportButton \", error);\n      }\n    }\n    if (importWhitelist) {\n      try {\n        storeValue(\"enableImportButton\", JSON.parse(importWhitelist.config_value));\n      } catch (error) {\n        console.error(\"error store enableImportButton \", error);\n      }\n    }\n    return importRules.config_value || '';\n  }\n  return '';\n}"
               ],
               "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "architecture-mastermgmt_ArchGetLocationsByLevelConfig",
+              "name": "ArchGetLocationsByLevelConfig",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.token"
+              ],
+              "timeoutInMillisecond": 20000
             }
           ],
           [
